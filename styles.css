@@ -272,7 +272,7 @@ p { margin: 0; }
   white-space: nowrap;
 }
 .map-dot small { display: block; position: absolute; left: 50%; top: calc(100% + 4px); transform: translateX(-50%); font-family: var(--font); font-weight: 600; font-size: 12px; color: var(--muted); }
-.map-dot--lumiere { left: 50%; top: 24%; background: var(--choc); color: var(--gold-light); font-family: var(--font-serif); font-size: 18px; }
+.map-dot--lumiere { left: 64%; top: 36%; background: var(--choc); color: var(--gold-light); font-family: var(--font-serif); font-size: 18px; }
 .map-dot--noir { left: 80%; top: 18%; background: var(--noir); color: #fff; font-family: var(--font-cond); letter-spacing: .08em; }
 .map-dot--vitamilk { left: 24%; top: 62%; background: var(--green-soft); color: var(--green-dark); }
 .map-dot--cosmetics { left: 74%; top: 66%; background: var(--pink-soft); color: var(--rose-dark); }
