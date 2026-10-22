@@ -8,3 +8,7 @@
 - `styles.css` — стили, цвета линеек заданы переменными в `:root`
 - `script.js` — мобильное меню, появление блоков при прокрутке, подсветка пункта меню
 - `assets/img/` — изображения из презентации
+
+## Публикация
+
+Сайт деплоится на GitHub Pages workflow-ом `.github/workflows/pages.yml` при каждом пуше в ветку `claude/hopeful-dirac-ur2n4w`: https://jmsbrn.github.io/konnaya-ferma/
