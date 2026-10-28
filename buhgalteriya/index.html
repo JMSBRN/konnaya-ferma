@@ -74,17 +74,13 @@
           <li><a href="#price-list">Управленческая отчётность</a></li>
         </ul>
       </div>
-      <a href="#reviews">Отзывы</a>
+      <a href="#clients">Клиенты</a>
       <a href="#contacts">Контакты</a>
     </nav>
 
     <div class="header-actions">
-      <a class="messenger" href="https://t.me/" aria-label="Telegram"><svg><use href="#i-tg"/></svg></a>
-      <a class="messenger" href="viber://chat?number=" aria-label="Viber"><svg><use href="#i-viber"/></svg></a>
-      <div class="header-call">
-        <a class="header-phone" href="tel:+375290000000">+375 (29) 000-00-00</a>
-        <button class="btn btn--outline btn--sm" data-modal-open>Заказать звонок</button>
-      </div>
+      <a class="header-phone" href="tel:+375290000000">+375 (29) 000-00-00</a>
+      <button class="btn btn--primary btn--sm" data-modal-open>Консультация</button>
     </div>
   </div>
 </header>
@@ -93,45 +89,34 @@
 
   <!-- Первый экран -->
   <section class="hero">
-    <div class="container">
-      <div class="hero-box">
-        <div class="hero-text">
-          <h1>Бухгалтерское<br>сопровождение</h1>
-          <p>Мы разбираемся в том, как устроен бизнес наших клиентов. Глубокая экспертиза и знание отраслей позволяют вести учёт качественно и с учётом особенностей каждой компании.</p>
-          <button class="btn btn--white" data-modal-open>Получить бесплатную консультацию</button>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="tag reveal">Бухгалтерский аутсорсинг · Минск</span>
+        <h1 class="reveal">Бухгалтерия, <em>в&nbsp;которой всё сходится</em></h1>
+        <p class="hero-sub reveal">Мы разбираемся в том, как устроен бизнес наших клиентов. Глубокая экспертиза и знание отраслей позволяют вести учёт качественно и с учётом особенностей каждой компании.</p>
+        <div class="hero-actions reveal">
+          <button class="btn btn--primary" data-modal-open>Бесплатная консультация</button>
+          <a class="btn btn--ghost" href="#services">Смотреть услуги <svg><use href="#i-arrow"/></svg></a>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-circle"></div>
-          <div class="hero-sheet">
-            <div class="sheet-head"><span></span><span></span><span></span></div>
-            <div class="sheet-row"><i style="width:70%"></i></div>
-            <div class="sheet-row"><i style="width:45%"></i></div>
-            <div class="sheet-bars">
-              <b style="height:40%"></b><b style="height:62%"></b><b style="height:50%"></b><b style="height:80%"></b><b style="height:68%"></b><b style="height:95%"></b>
-            </div>
-            <div class="sheet-total">Баланс сошёлся <svg><use href="#i-shield"/></svg></div>
-          </div>
-          <div class="hero-badge hero-badge--top"><svg><use href="#i-chart"/></svg> +18% к прибыли</div>
-          <div class="hero-badge hero-badge--bottom"><svg><use href="#i-clock"/></svg> Отчёты вовремя</div>
-        </div>
+        <ul class="hero-facts reveal">
+          <li><svg><use href="#i-gears"/></svg><div><b>Опыт и экспертиза</b><span>практикующие бухгалтеры и налоговики</span></div></li>
+          <li><svg><use href="#i-chart"/></svg><div><b>Гибкий объём</b><span>услуги меняются вместе с бизнесом</span></div></li>
+          <li><svg><use href="#i-shield"/></svg><div><b>Меньше рисков</b><span>учёт по закону и стандартам</span></div></li>
+        </ul>
       </div>
-
-      <div class="hero-cards">
-        <article class="feature-card reveal">
-          <svg class="feature-icon"><use href="#i-gears"/></svg>
-          <h3>Опыт и глубокая экспертиза</h3>
-          <p>Учёт ведут практикующие специалисты по бухгалтерии и налогам</p>
-        </article>
-        <article class="feature-card reveal">
-          <svg class="feature-icon"><use href="#i-chart"/></svg>
-          <h3>Ресурсы под ваши задачи</h3>
-          <p>На аутсорсинге объём услуг легко меняется вслед за потребностями компании</p>
-        </article>
-        <article class="feature-card reveal">
-          <svg class="feature-icon"><use href="#i-shield"/></svg>
-          <h3>Меньше рисков, больше надёжности</h3>
-          <p>Соблюдаем требования законодательства и стандарты учёта и отчётности</p>
-        </article>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-blob"></div>
+        <div class="hero-sheet">
+          <div class="sheet-head"><span></span><span></span><span></span></div>
+          <div class="sheet-row"><i style="width:70%"></i></div>
+          <div class="sheet-row"><i style="width:45%"></i></div>
+          <div class="sheet-bars">
+            <b style="height:40%"></b><b style="height:62%"></b><b style="height:50%"></b><b style="height:80%"></b><b style="height:68%"></b><b style="height:95%"></b>
+          </div>
+          <div class="sheet-total">Баланс сошёлся <svg><use href="#i-shield"/></svg></div>
+        </div>
+        <div class="hero-badge hero-badge--top"><svg><use href="#i-chart"/></svg> +18% к прибыли</div>
+        <div class="hero-badge hero-badge--bottom"><svg><use href="#i-clock"/></svg> Отчёты вовремя</div>
       </div>
     </div>
   </section>
@@ -139,35 +124,66 @@
   <!-- Услуги -->
   <section class="section" id="services">
     <div class="container">
-      <div class="intro">
-        <div class="intro-title reveal">
-          <span class="line"></span>
-          <h2><em>Возьмём</em> бухгалтерский учёт <em>на себя</em></h2>
+      <div class="sec-head">
+        <div class="reveal">
+          <span class="tag">Услуги</span>
+          <h2>Возьмём бухгалтерский учёт <em>на&nbsp;себя</em></h2>
         </div>
-        <div class="intro-text reveal">
-          <p>Настроим понятный порядок сбора и передачи первичных документов.</p>
-          <p>Оказываем полный спектр бухгалтерских услуг: от комплексного обслуживания по абонентской плате до ведения отдельных участков учёта.</p>
-        </div>
+        <p class="reveal">Настроим понятный порядок сбора первичных документов и возьмём на себя как комплексное обслуживание по абонентской плате, так и отдельные участки учёта.</p>
       </div>
 
-      <div class="tiles">
-        <a class="tile tile--1 reveal" href="#price-list"><svg><use href="#i-layers"/></svg><h3>Бухгалтерский и налоговый учёт организации</h3></a>
-        <a class="tile tile--2 reveal" href="#price-list"><svg><use href="#i-user"/></svg><h3>Бухгалтерия для индивидуальных предпринимателей</h3></a>
-        <a class="tile tile--3 reveal" href="#price-list"><svg><use href="#i-cart"/></svg><h3>Учёт для продавцов на маркетплейсах</h3></a>
-        <a class="tile tile--4 reveal" href="#price-list"><svg><use href="#i-wallet"/></svg><h3>Расчёт заработной платы</h3></a>
-        <a class="tile tile--5 reveal" href="#price-list"><svg><use href="#i-doc"/></svg><h3>Отдельные участки учёта</h3></a>
-        <a class="tile tile--6 reveal" href="#price-list"><svg><use href="#i-chat"/></svg><h3>Консультации бухгалтера</h3></a>
-        <a class="tile tile--7 reveal" href="#price-list"><svg><use href="#i-receipt"/></svg><h3>Оформление авансовых отчётов</h3></a>
-        <a class="tile tile--8 reveal" href="#price-list"><svg><use href="#i-plus"/></svg><h3>Прочие услуги</h3></a>
+      <div class="bento">
+        <a class="svc svc--wide reveal" href="#price-list">
+          <span class="svc-num">01</span>
+          <span class="svc-icon"><svg><use href="#i-layers"/></svg></span>
+          <h3>Бухгалтерский и налоговый учёт организации</h3>
+          <p>Ведём учёт целиком: первичка, налоги, зарплата, отчётность</p>
+          <svg class="svc-go"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="svc reveal" href="#price-list"><span class="svc-num">02</span><span class="svc-icon"><svg><use href="#i-user"/></svg></span><h3>Бухгалтерия для ИП</h3><svg class="svc-go"><use href="#i-arrow"/></svg></a>
+        <a class="svc reveal" href="#price-list"><span class="svc-num">03</span><span class="svc-icon"><svg><use href="#i-cart"/></svg></span><h3>Учёт для продавцов на маркетплейсах</h3><svg class="svc-go"><use href="#i-arrow"/></svg></a>
+        <a class="svc reveal" href="#price-list"><span class="svc-num">04</span><span class="svc-icon"><svg><use href="#i-wallet"/></svg></span><h3>Расчёт заработной платы</h3><svg class="svc-go"><use href="#i-arrow"/></svg></a>
+        <a class="svc reveal" href="#price-list"><span class="svc-num">05</span><span class="svc-icon"><svg><use href="#i-doc"/></svg></span><h3>Отдельные участки учёта</h3><svg class="svc-go"><use href="#i-arrow"/></svg></a>
+        <a class="svc reveal" href="#price-list"><span class="svc-num">06</span><span class="svc-icon"><svg><use href="#i-chat"/></svg></span><h3>Консультации бухгалтера</h3><svg class="svc-go"><use href="#i-arrow"/></svg></a>
+        <a class="svc reveal" href="#price-list"><span class="svc-num">07</span><span class="svc-icon"><svg><use href="#i-receipt"/></svg></span><h3>Оформление авансовых отчётов</h3><svg class="svc-go"><use href="#i-arrow"/></svg></a>
+        <a class="svc svc--soft svc--span reveal" href="findir/"><span class="svc-num">08</span><span class="svc-icon"><svg><use href="#i-chart"/></svg></span><h3>Финансовый директор на аутсорсе</h3><svg class="svc-go"><use href="#i-arrow"/></svg></a>
       </div>
+
+      <details class="worklist reveal" id="price-list">
+        <summary><span>Полный перечень работ</span><small>18 позиций</small><svg><use href="#i-chevron"/></svg></summary>
+        <ul>
+          <li>Бухгалтерский учёт по Национальным стандартам (НСБУ)</li>
+          <li>Составление и сдача бухгалтерской отчётности в налоговую</li>
+          <li>Учётная политика для бухгалтерского и налогового учёта</li>
+          <li>Налоговый учёт и налоговые регистры</li>
+          <li>Консультации по налогам и стандартам учёта</li>
+          <li>Учёт основных средств, дебиторской задолженности и других участков</li>
+          <li>Банк и касса: платёжные поручения, графики платежей</li>
+          <li>Отчёты о движении денежных средств</li>
+          <li>Статистическая отчётность</li>
+          <li>Восстановление бухгалтерского и налогового учёта</li>
+          <li>Объединение методик учёта после реорганизации</li>
+          <li>Обучение сотрудников</li>
+          <li>Контроль соблюдения налогового законодательства</li>
+          <li>Декларации по НДС, налогу на прибыль, на недвижимость и другим налогам</li>
+          <li>Годовая отчётность с пояснениями</li>
+          <li>Сопровождение в налоговой и других госорганах</li>
+          <li>Управленческая отчётность: формы и согласование</li>
+          <li>Ответы на запросы налоговой, камеральные и выездные проверки</li>
+        </ul>
+      </details>
     </div>
   </section>
 
   <!-- Клиенты и партнёрство. Цвета и логотип — из фирменного стиля сети VARKA -->
   <section class="section section--tight" id="clients">
     <div class="container">
-      <span class="eyebrow eyebrow--center reveal">Нам доверяют</span>
-      <h2 class="section-title reveal">Наши <em>клиенты</em></h2>
+      <div class="sec-head sec-head--single reveal">
+        <div>
+          <span class="tag">Нам доверяют</span>
+          <h2>Наши <em>клиенты</em></h2>
+        </div>
+      </div>
       <div class="partner reveal">
         <a class="partner-card" href="https://varkacoffee.by/" target="_blank" rel="noopener" aria-label="Сеть кофеен VARKA — varkacoffee.by">
           <span class="partner-badge"><svg><use href="#i-shield"/></svg>Официальный партнёр</span>
@@ -192,99 +208,44 @@
     </div>
   </section>
 
-  <!-- Преимущества -->
-  <section class="section" id="advantages">
+  <!-- Почему мы: преимущества и экономия -->
+  <section class="section section--soft" id="advantages">
     <div class="container">
-      <h2 class="section-title reveal">Наши <em>преимущества</em></h2>
-      <div class="adv-grid">
-        <article class="adv-card reveal">
-          <span class="adv-icon"><svg><use href="#i-team"/></svg></span>
-          <p>Одна команда заменит вам бухгалтера, кадровика и налогового консультанта — все функции в одних руках</p>
-        </article>
-        <article class="adv-card reveal">
-          <span class="adv-icon"><svg><use href="#i-clock"/></svg></span>
-          <p>Мы всегда на связи: в отличие от штатного сотрудника, не уходим в отпуск, на больничный или в декрет</p>
-        </article>
-        <article class="adv-card reveal">
-          <span class="adv-icon"><svg><use href="#i-law"/></svg></span>
-          <p>Следим за изменениями в налоговом, трудовом и бухгалтерском законодательстве и вовремя о них предупреждаем</p>
-        </article>
-        <article class="adv-card reveal">
-          <span class="adv-icon"><svg><use href="#i-bolt"/></svg></span>
-          <p>Быстро принимаем учёт: проводим экспресс-аудит всех участков и исправляем найденные ошибки</p>
-        </article>
-        <article class="adv-card reveal">
-          <span class="adv-icon"><svg><use href="#i-chat"/></svg></span>
-          <p>Пишите в Telegram, Viber или на почту — ставьте задачи и задавайте вопросы так, как вам удобно</p>
-        </article>
-        <article class="adv-card reveal">
-          <span class="adv-icon"><svg><use href="#i-scale"/></svg></span>
-          <p>Независимый и объективный подход к учёту и консультациям с учётом свежих изменений в законах</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Экономия -->
-  <section class="section section--tight">
-    <div class="container">
-      <h2 class="section-title reveal">Сбережём ваши деньги <em>и время!</em></h2>
-      <div class="savings">
-        <ol class="savings-col">
-          <li class="reveal"><span class="num">01</span><p>Аутсорсер не болеет, не берёт отпуск и не нуждается в соцпакете. Типовые задачи и автоматизация документооборота делают учёт дешевле и эффективнее</p></li>
-          <li class="reveal"><span class="num">02</span><p>Не придётся искать, обучать и удерживать квалифицированного бухгалтера</p></li>
-          <li class="reveal"><span class="num">03</span><p>Не нужно оборудовать рабочее место: компьютер, правовые базы, лицензия на 1С — всё на нашей стороне</p></li>
-          <li class="reveal"><span class="num">04</span><p>Нет затрат на курсы повышения квалификации, справочные системы и профильные издания</p></li>
-          <li class="reveal"><span class="num">05</span><p>Меньше ошибок, которые оборачиваются переплатой налогов и штрафами</p></li>
-        </ol>
-        <div class="savings-center" aria-hidden="true">
-          <div class="savings-arc"></div>
-          <div class="savings-coin">
-            <svg><use href="#i-wallet"/></svg>
-            <strong>до 40%</strong>
-            <span>экономии на бухгалтерии</span>
-          </div>
+      <div class="sec-head">
+        <div class="reveal">
+          <span class="tag">Почему мы</span>
+          <h2>Сбережём ваши деньги <em>и&nbsp;время</em></h2>
         </div>
-        <ol class="savings-col savings-col--right" start="6">
-          <li class="reveal"><span class="num">06</span><p>Качество бухгалтерского, налогового и кадрового учёта контролирует сам аутсорсер</p></li>
-          <li class="reveal"><span class="num">07</span><p>Внешние специалисты упрощают и ускоряют ваши процессы</p></li>
-          <li class="reveal"><span class="num">08</span><p>Не нужно самостоятельно отслеживать изменения налогового законодательства</p></li>
-          <li class="reveal"><span class="num">09</span><p>Учётные задачи решаются в срок и без потери качества</p></li>
-          <li class="reveal"><span class="num">10</span><p>Не нужно контролировать работу бухгалтера и кадровика</p></li>
-        </ol>
+        <p class="reveal">Одна команда заменит бухгалтера, кадровика и налогового консультанта — и обойдётся дешевле штатного отдела.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- Перечень услуг -->
-  <section class="section" id="price-list">
-    <div class="container list-layout">
-      <div class="list-col">
-        <h2 class="list-title reveal">Какие услуги мы оказываем:</h2>
-        <ul class="srv-list">
-          <li class="reveal"><span><svg><use href="#i-layers"/></svg></span>Ведение бухгалтерского учёта по Национальным стандартам (НСБУ)</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-send"/></svg></span>Составление и сдача бухгалтерской отчётности в налоговые органы</li>
-          <li class="reveal"><span><svg><use href="#i-team"/></svg></span>Разработка учётной политики для целей бухгалтерского и налогового учёта</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-send"/></svg></span>Налоговый учёт по действующему законодательству и формирование налоговых регистров</li>
-          <li class="reveal"><span><svg><use href="#i-chat"/></svg></span>Консультации по налоговому законодательству и стандартам бухгалтерского учёта</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-doc"/></svg></span>Ведение отдельных участков учёта — например, основных средств или дебиторской задолженности</li>
-          <li class="reveal"><span><svg><use href="#i-chart"/></svg></span>Работа с банковскими счетами и кассой: платёжные поручения, графики платежей, отчёты о движении денег</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-send"/></svg></span>Отчёты о движении денежных средств</li>
-          <li class="reveal"><span><svg><use href="#i-receipt"/></svg></span>Статистическая отчётность и её сдача в органы статистики</li>
-        </ul>
-      </div>
-      <div class="list-col list-col--offset">
-        <ul class="srv-list">
-          <li class="is-accent reveal"><span><svg><use href="#i-law"/></svg></span>Восстановление бухгалтерского и налогового учёта</li>
-          <li class="reveal"><span><svg><use href="#i-layers"/></svg></span>Объединение методик учёта после реорганизации — слияния, присоединения и т. п.</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-user"/></svg></span>Обучение сотрудников</li>
-          <li class="reveal"><span><svg><use href="#i-shield"/></svg></span>Контроль соблюдения налогового законодательства</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-doc"/></svg></span>Декларации по НДС, налогу на прибыль, на недвижимость, на доходы иностранных организаций и другим налогам</li>
-          <li class="reveal"><span><svg><use href="#i-receipt"/></svg></span>Годовая отчётность в полном комплекте: годовой отчёт и пояснения к нему</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-team"/></svg></span>Сопровождение при взаимодействии с налоговой инспекцией и другими госорганами</li>
-          <li class="reveal"><span><svg><use href="#i-chart"/></svg></span>Управленческая отчётность: разработка и согласование форм отчётов</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-scale"/></svg></span>Помощь с ответами на запросы налоговой, сопровождение камеральных и выездных проверок, анализ документов</li>
-        </ul>
+      <ul class="perks">
+        <li class="reveal"><span><svg><use href="#i-clock"/></svg></span><p><b>Всегда на связи.</b> Не уходим в отпуск, на больничный или в декрет</p></li>
+        <li class="reveal"><span><svg><use href="#i-law"/></svg></span><p><b>Следим за законами.</b> Вовремя предупреждаем об изменениях в налогах и трудовом праве</p></li>
+        <li class="reveal"><span><svg><use href="#i-bolt"/></svg></span><p><b>Быстрый старт.</b> Экспресс-аудит всех участков и исправление ошибок</p></li>
+        <li class="reveal"><span><svg><use href="#i-chat"/></svg></span><p><b>Удобная связь.</b> Telegram, Viber или почта — как вам удобнее</p></li>
+        <li class="reveal"><span><svg><use href="#i-scale"/></svg></span><p><b>Объективность.</b> Независимый взгляд на учёт и консультации</p></li>
+        <li class="reveal"><span><svg><use href="#i-team"/></svg></span><p><b>Всё в одних руках.</b> Бухгалтерия, кадры и налоги — одна команда</p></li>
+      </ul>
+
+      <div class="compare reveal">
+        <div class="compare-stat">
+          <strong>до 40%</strong>
+          <span>экономии на бухгалтерии по сравнению со штатным отделом</span>
+          <button class="btn btn--white" data-modal-open>Рассчитать стоимость</button>
+        </div>
+        <div class="compare-table" role="table" aria-label="Штатный бухгалтер и БалансПро">
+          <div class="compare-row compare-row--head" role="row">
+            <span role="columnheader"></span><span role="columnheader">Штатный бухгалтер</span><span role="columnheader">БалансПро</span>
+          </div>
+          <div class="compare-row" role="row"><span role="rowheader">Отпуска и больничные</span><span role="cell">учёт останавливается</span><span role="cell">работаем без перерывов</span></div>
+          <div class="compare-row" role="row"><span role="rowheader">Поиск и обучение</span><span role="cell">ищете, обучаете, удерживаете</span><span role="cell">не нужно</span></div>
+          <div class="compare-row" role="row"><span role="rowheader">Рабочее место, 1С, правовые базы</span><span role="cell">за ваш счёт</span><span role="cell">на нашей стороне</span></div>
+          <div class="compare-row" role="row"><span role="rowheader">Курсы и справочные системы</span><span role="cell">оплачиваете отдельно</span><span role="cell">входит в услугу</span></div>
+          <div class="compare-row" role="row"><span role="rowheader">Изменения в законодательстве</span><span role="cell">нужно следить самим</span><span role="cell">отслеживаем и предупреждаем</span></div>
+          <div class="compare-row" role="row"><span role="rowheader">Контроль качества</span><span role="cell">на руководителе</span><span role="cell">на нашей стороне</span></div>
+          <div class="compare-row" role="row"><span role="rowheader">Ошибки и штрафы</span><span role="cell">риск переплат выше</span><span role="cell">снижаем риски</span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -292,31 +253,25 @@
   <!-- Отзывы. Примеры — замените на реальные отзывы или сканы писем клиентов -->
   <section class="section" id="reviews">
     <div class="container">
-      <h2 class="section-title reveal">Отзывы <em>клиентов</em></h2>
-      <div class="slider" data-slider>
-        <div class="slider-viewport">
-        <div class="slider-track">
-          <figure class="review">
-            <blockquote>Перешли на обслуживание по рекомендации партнёров и ни разу не пожалели. Бухгалтерия больше не отнимает у меня время, а регулярная аналитика помогает планировать налоги и расходы заранее.</blockquote>
-            <figcaption><b>Директор</b><span>производственная компания</span></figcaption>
-          </figure>
-          <figure class="review">
-            <blockquote>Передали учёт на аутсорс после ухода главного бухгалтера. Ушли проблемы с отпусками и больничными, на вопросы по договорам и актам отвечают быстро. Рекомендую.</blockquote>
-            <figcaption><b>Руководитель</b><span>торговая компания</span></figcaption>
-          </figure>
-          <figure class="review">
-            <blockquote>Как ИП и продавец на маркетплейсе я долго не мог разобраться с учётом. Ребята всё настроили, объяснили простым языком и теперь сдают отчётность без моего участия.</blockquote>
-            <figcaption><b>Индивидуальный предприниматель</b><span>онлайн-торговля</span></figcaption>
-          </figure>
-          <figure class="review">
-            <blockquote>Восстановили учёт за два года и подготовили нас к проверке. Всё прошло спокойно, без штрафов. Отдельное спасибо за терпение и подробные консультации.</blockquote>
-            <figcaption><b>Учредитель</b><span>сфера услуг</span></figcaption>
-          </figure>
+      <div class="sec-head sec-head--single reveal">
+        <div>
+          <span class="tag">Отзывы</span>
+          <h2>Что говорят <em>клиенты</em></h2>
         </div>
-        </div>
-        <button class="slider-btn slider-btn--prev" aria-label="Предыдущий отзыв"><svg><use href="#i-arrow"/></svg></button>
-        <button class="slider-btn slider-btn--next" aria-label="Следующий отзыв"><svg><use href="#i-arrow"/></svg></button>
-        <div class="slider-dots"></div>
+      </div>
+      <div class="reviews">
+        <figure class="review reveal">
+          <blockquote>Перешли на обслуживание по рекомендации партнёров и ни разу не пожалели. Бухгалтерия больше не отнимает у меня время, а регулярная аналитика помогает планировать налоги и расходы заранее.</blockquote>
+          <figcaption><span class="avatar">Д</span><div><b>Директор</b><small>производственная компания</small></div></figcaption>
+        </figure>
+        <figure class="review reveal">
+          <blockquote>Передали учёт на аутсорс после ухода главного бухгалтера. Ушли проблемы с отпусками и больничными, на вопросы по договорам и актам отвечают быстро.</blockquote>
+          <figcaption><span class="avatar">Р</span><div><b>Руководитель</b><small>торговая компания</small></div></figcaption>
+        </figure>
+        <figure class="review reveal">
+          <blockquote>Как ИП и продавец на маркетплейсе долго не мог разобраться с учётом. Всё настроили, объяснили простым языком и теперь сдают отчётность без моего участия.</blockquote>
+          <figcaption><span class="avatar">И</span><div><b>Индивидуальный предприниматель</b><small>онлайн-торговля</small></div></figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -326,10 +281,9 @@
     <div class="container">
       <div class="contact-box reveal">
         <div class="contact-info">
-          <span class="eyebrow">Надёжный партнёр в финансовых вопросах</span>
+          <span class="tag tag--light">Надёжный партнёр в финансовых вопросах</span>
           <h2>Убедитесь сами</h2>
           <p>Оставьте заявку на бесплатную консультацию — мы перезвоним и ответим на все ваши вопросы.</p>
-          <a class="logo logo--big" href="#top"><span class="logo-mark">БП</span><span class="logo-text">Баланс<b>Про</b></span></a>
           <ul class="contact-list">
             <li><svg><use href="#i-mail"/></svg><div><h3>E-mail</h3><a href="mailto:info@balanspro.by">info@balanspro.by</a></div></li>
             <li><svg><use href="#i-phone"/></svg><div><h3>Телефон</h3><a href="tel:+375290000000">+375 (29) 000-00-00</a></div></li>
@@ -337,12 +291,13 @@
           </ul>
         </div>
         <form class="contact-form" data-form novalidate>
-          <span class="eyebrow">Остались вопросы? Напишите нам</span>
           <h2>Форма заявки</h2>
-          <label>Ваше имя<input name="name" type="text" autocomplete="name" required></label>
-          <label>Телефон<input name="phone" type="tel" autocomplete="tel" required></label>
+          <div class="form-row">
+            <label>Ваше имя<input name="name" type="text" autocomplete="name" required></label>
+            <label>Телефон<input name="phone" type="tel" autocomplete="tel" required></label>
+          </div>
           <label>E-mail<input name="email" type="email" autocomplete="email"></label>
-          <label>Сообщение (по желанию)<textarea name="message" rows="4"></textarea></label>
+          <label>Сообщение (по желанию)<textarea name="message" rows="3"></textarea></label>
           <label class="check"><input type="checkbox" required> Я согласен с <a href="#">политикой обработки персональных данных</a></label>
           <button class="btn btn--primary" type="submit">Отправить заявку</button>
           <p class="form-status" role="status"></p>
@@ -356,32 +311,28 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-about">
-      <a class="logo" href="#top"><span class="logo-mark">БП</span><span class="logo-text">Баланс<b>Про</b></span></a>
+      <a class="logo logo--light" href="#top"><span class="logo-mark">БП</span><span class="logo-text">Баланс<b>Про</b></span></a>
       <p>ООО «БалансПро»<br>г. Минск, ул. Примерная, д. 1, офис 10</p>
     </div>
     <ul class="footer-links">
-      <li><a href="#services">Бухгалтерия для ИП</a></li>
-      <li><a href="#services">Учёт для продавцов на маркетплейсах</a></li>
-      <li><a href="#services">Бухгалтерский и налоговый учёт организаций</a></li>
-      <li><a href="#services">Отдельные участки учёта</a></li>
+      <li><a href="#services">Бухгалтерия для ИП и ООО</a></li>
+      <li><a href="#services">Учёт для маркетплейсов</a></li>
       <li><a href="#services">Расчёт заработной платы</a></li>
-      <li><a href="#services">Авансовые отчёты</a></li>
-    </ul>
-    <ul class="footer-links">
-      <li><a href="#services">Бухгалтерия для ООО</a></li>
       <li><a href="findir/">Финансовый директор на аутсорсе</a></li>
     </ul>
     <div class="footer-contacts">
+      <a class="header-phone" href="tel:+375290000000">+375 (29) 000-00-00</a>
       <div class="footer-messengers">
         <a class="messenger" href="https://t.me/" aria-label="Telegram"><svg><use href="#i-tg"/></svg></a>
         <a class="messenger" href="viber://chat?number=" aria-label="Viber"><svg><use href="#i-viber"/></svg></a>
+        <a class="messenger" href="mailto:info@balanspro.by" aria-label="E-mail"><svg><use href="#i-mail"/></svg></a>
       </div>
-      <a class="header-phone" href="tel:+375290000000">+375 (29) 000-00-00</a>
-      <button class="btn btn--outline btn--sm" data-modal-open>Заказать звонок</button>
-      <a class="footer-policy" href="#">Политика конфиденциальности</a>
     </div>
   </div>
-  <div class="footer-bottom">© БалансПро, все права защищены</div>
+  <div class="container footer-bottom">
+    <span>© БалансПро, все права защищены</span>
+    <a href="#">Политика конфиденциальности</a>
+  </div>
 </footer>
 
 <!-- Плавающая кнопка связи -->

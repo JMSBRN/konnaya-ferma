@@ -73,17 +73,13 @@
           <li><a href="../#price-list">Управленческая отчётность</a></li>
         </ul>
       </div>
-      <a href="../#reviews">Отзывы</a>
+      <a href="../#clients">Клиенты</a>
       <a href="#contacts">Контакты</a>
     </nav>
 
     <div class="header-actions">
-      <a class="messenger" href="https://t.me/" aria-label="Telegram"><svg><use href="#i-tg"/></svg></a>
-      <a class="messenger" href="viber://chat?number=" aria-label="Viber"><svg><use href="#i-viber"/></svg></a>
-      <div class="header-call">
-        <a class="header-phone" href="tel:+375290000000">+375 (29) 000-00-00</a>
-        <button class="btn btn--outline btn--sm" data-modal-open>Заказать звонок</button>
-      </div>
+      <a class="header-phone" href="tel:+375290000000">+375 (29) 000-00-00</a>
+      <button class="btn btn--primary btn--sm" data-modal-open>Консультация</button>
     </div>
   </div>
 </header>
@@ -92,89 +88,83 @@
 
   <!-- Первый экран -->
   <section class="hero">
-    <div class="container">
-      <div class="hero-box hero-box--solo">
-        <div class="hero-text">
-          <h1>Финансовый директор на&nbsp;аутсорсе</h1>
-          <p class="hero-lead">Выстроим управление компанией на цифрах вместе с внешним финансовым директором — и вы:</p>
-          <ul class="checks">
-            <li>увидите новые источники роста</li>
-            <li>будете ставить цели и выходить на них</li>
-            <li>забудете о кассовых разрывах</li>
-            <li>накопите финансовый резерв</li>
-          </ul>
-          <button class="btn btn--white" data-modal-open>Получить бесплатную консультацию</button>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="tag reveal">Услуги для бизнеса</span>
+        <h1 class="reveal">Финансовый директор <em>на&nbsp;аутсорсе</em></h1>
+        <p class="hero-sub reveal">Выстроим управление компанией на цифрах вместе с внешним финансовым директором — и вы:</p>
+        <ul class="checks reveal">
+          <li>увидите новые источники роста</li>
+          <li>будете ставить цели и выходить на них</li>
+          <li>забудете о кассовых разрывах</li>
+          <li>накопите финансовый резерв</li>
+        </ul>
+        <div class="hero-actions reveal">
+          <button class="btn btn--primary" data-modal-open>Бесплатная консультация</button>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-circle"></div>
-          <div class="hero-sheet">
-            <div class="sheet-head"><span></span><span></span><span></span></div>
-            <div class="sheet-kpis">
-              <div><small>Выручка</small><b>+24%</b></div>
-              <div><small>Маржа</small><b>31%</b></div>
-            </div>
-            <svg class="sheet-line" viewBox="0 0 230 90" preserveAspectRatio="none">
-              <path d="M0 80 L35 66 L70 70 L105 48 L140 52 L175 28 L230 10" fill="none" stroke="#8657cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M0 80 L35 66 L70 70 L105 48 L140 52 L175 28 L230 10 L230 90 L0 90Z" fill="#8657cc" opacity=".12"/>
-            </svg>
-            <div class="sheet-total">План выполнен <svg><use href="#i-shield"/></svg></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-blob"></div>
+        <div class="hero-sheet">
+          <div class="sheet-head"><span></span><span></span><span></span></div>
+          <div class="sheet-kpis">
+            <div><small>Выручка</small><b>+24%</b></div>
+            <div><small>Маржа</small><b>31%</b></div>
           </div>
-          <div class="hero-badge hero-badge--top"><svg><use href="#i-wallet"/></svg> Резерв на 3 месяца</div>
-          <div class="hero-badge hero-badge--bottom"><svg><use href="#i-chart"/></svg> Без кассовых разрывов</div>
+          <svg class="sheet-line" viewBox="0 0 230 90" preserveAspectRatio="none">
+            <path d="M0 80 L35 66 L70 70 L105 48 L140 52 L175 28 L230 10" fill="none" stroke="#8657cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M0 80 L35 66 L70 70 L105 48 L140 52 L175 28 L230 10 L230 90 L0 90Z" fill="#8657cc" opacity=".12"/>
+          </svg>
+          <div class="sheet-total">План выполнен <svg><use href="#i-shield"/></svg></div>
         </div>
+        <div class="hero-badge hero-badge--top"><svg><use href="#i-wallet"/></svg> Резерв на 3 месяца</div>
+        <div class="hero-badge hero-badge--bottom"><svg><use href="#i-chart"/></svg> Без кассовых разрывов</div>
       </div>
     </div>
   </section>
 
   <!-- Что делает финдиректор -->
   <section class="section" id="tasks">
-    <div class="container list-layout">
-      <div class="list-col">
-        <span class="eyebrow reveal">Ваш надёжный партнёр</span>
-        <h2 class="list-title reveal">Чем занимается финансовый директор на аутсорсе</h2>
-        <ul class="srv-list">
-          <li class="is-accent reveal"><span><svg><use href="#i-doc"/></svg></span>Наводит порядок в сборе финансовых данных компании</li>
-          <li class="reveal"><span><svg><use href="#i-chart"/></svg></span>Находит резервы для роста бизнеса</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-send"/></svg></span>Выстраивает финансовую модель компании</li>
-        </ul>
+    <div class="container">
+      <div class="sec-head">
+        <div class="reveal">
+          <span class="tag">Ваш надёжный партнёр</span>
+          <h2>Чем занимается <em>финансовый директор</em></h2>
+        </div>
+        <p class="reveal">Берёт на себя финансовую сторону бизнеса: от сбора цифр до сценариев развития.</p>
       </div>
-      <div class="list-col list-col--top">
-        <ul class="srv-list">
-          <li class="reveal"><span><svg><use href="#i-team"/></svg></span>Готовит управленческую отчётность</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-layers"/></svg></span>Просчитывает финансовые модели новых направлений и продуктов</li>
-          <li class="reveal"><span><svg><use href="#i-team"/></svg></span>Предлагает сценарии развития бизнеса</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-send"/></svg></span>Помогает не допускать кассовых разрывов</li>
-        </ul>
+      <div class="bento">
+        <div class="svc svc--wide reveal">
+          <span class="svc-num">01</span>
+          <span class="svc-icon"><svg><use href="#i-doc"/></svg></span>
+          <h3>Наводит порядок в финансовых данных</h3>
+          <p>Систематизирует сбор цифр по всей компании</p>
+        </div>
+        <div class="svc reveal"><span class="svc-num">02</span><span class="svc-icon"><svg><use href="#i-chart"/></svg></span><h3>Находит резервы для роста</h3></div>
+        <div class="svc reveal"><span class="svc-num">03</span><span class="svc-icon"><svg><use href="#i-layers"/></svg></span><h3>Выстраивает финансовую модель</h3></div>
+        <div class="svc reveal"><span class="svc-num">04</span><span class="svc-icon"><svg><use href="#i-receipt"/></svg></span><h3>Готовит управленческую отчётность</h3></div>
+        <div class="svc reveal"><span class="svc-num">05</span><span class="svc-icon"><svg><use href="#i-plus"/></svg></span><h3>Просчитывает новые направления и продукты</h3></div>
+        <div class="svc svc--span reveal"><span class="svc-num">06</span><span class="svc-icon"><svg><use href="#i-team"/></svg></span><h3>Предлагает сценарии развития</h3></div>
+        <div class="svc svc--soft svc--span reveal"><span class="svc-num">07</span><span class="svc-icon"><svg><use href="#i-wallet"/></svg></span><h3>Помогает избежать кассовых разрывов</h3></div>
       </div>
     </div>
   </section>
 
   <!-- Почему обращаются -->
-  <section class="section section--tight" id="why">
+  <section class="section section--soft" id="why">
     <div class="container">
-      <h2 class="section-title reveal">Почему к нам <em>приходят:</em></h2>
-      <div class="why-grid">
-        <article class="adv-card reveal">
-          <span class="adv-icon"><svg><use href="#i-chart"/></svg></span>
-          <h3>Больше прибыли, меньше лишних трат</h3>
-          <p>Помогаем наращивать прибыль и отсекать неэффективные расходы</p>
-        </article>
-        <article class="adv-card reveal">
-          <span class="adv-icon"><svg><use href="#i-doc"/></svg></span>
-          <h3>Финансы становятся прозрачными</h3>
-          <p>Настраиваем понятную систему контроля ключевых финансовых показателей</p>
-        </article>
-        <article class="adv-card reveal">
-          <span class="adv-icon"><svg><use href="#i-wallet"/></svg></span>
-          <h3>Решения на основе цифр</h3>
-          <p>Переводим управление компанией с интуиции на данные</p>
-        </article>
-        <article class="adv-card reveal">
-          <span class="adv-icon"><svg><use href="#i-shield"/></svg></span>
-          <h3>Видим проблемы заранее</h3>
-          <p>Замечаем слабые места до того, как они перерастут в кризис, — и успеваем вовремя принять меры, а не разбираться с последствиями</p>
-        </article>
+      <div class="sec-head sec-head--single reveal">
+        <div>
+          <span class="tag">Результат</span>
+          <h2>Почему к нам <em>приходят</em></h2>
+        </div>
       </div>
+      <ul class="perks perks--four">
+        <li class="reveal"><span><svg><use href="#i-chart"/></svg></span><p><b>Больше прибыли, меньше лишних трат.</b> Наращиваем прибыль и отсекаем неэффективные расходы</p></li>
+        <li class="reveal"><span><svg><use href="#i-doc"/></svg></span><p><b>Прозрачные финансы.</b> Понятная система контроля ключевых показателей</p></li>
+        <li class="reveal"><span><svg><use href="#i-wallet"/></svg></span><p><b>Решения на основе цифр.</b> Управление на данных, а не на интуиции</p></li>
+        <li class="reveal"><span><svg><use href="#i-shield"/></svg></span><p><b>Проблемы видны заранее.</b> Замечаем слабые места до кризиса и успеваем принять меры</p></li>
+      </ul>
     </div>
   </section>
 
@@ -182,9 +172,16 @@
   <section class="section">
     <div class="container split">
       <div class="split-text reveal">
+        <span class="tag">Отчётность</span>
         <h2>Прозрачный финансовый <em>учёт</em></h2>
-        <p>Отчёты, дашборды и наглядные графики помогают принимать взвешенные решения и не допускать кризисных ситуаций.</p>
-        <button class="btn btn--accent" data-modal-open>Получить бесплатную консультацию</button>
+        <p>Отчёты, дашборды и наглядные графики помогают принимать взвешенные решения и не допускать кризисных ситуаций. С нами вы точно будете знать:</p>
+        <ul class="checks">
+          <li>сколько дополнительной прибыли приносит рост продаж</li>
+          <li>где вы теряете деньги и недополучаете прибыль</li>
+          <li>на каких задачах сосредоточиться в первую очередь</li>
+          <li>что сделать, чтобы сократить затраты и заработать больше</li>
+        </ul>
+        <button class="btn btn--primary" data-modal-open>Бесплатная консультация</button>
       </div>
       <div class="dash reveal" aria-hidden="true">
         <div class="dash-top">
@@ -206,38 +203,23 @@
     </div>
   </section>
 
-  <!-- С нами вы будете знать -->
+  <!-- Почему аутсорсинг -->
   <section class="section section--tight">
     <div class="container">
-      <h2 class="section-title reveal">С нами вы <em>точно будете знать:</em></h2>
-      <div class="know-grid">
-        <article class="know-card reveal"><span><svg><use href="#i-chart"/></svg></span><p>Сколько дополнительной прибыли приносит рост продаж</p></article>
-        <article class="know-card is-accent reveal"><span><svg><use href="#i-wallet"/></svg></span><p>Где вы теряете деньги и недополучаете прибыль</p></article>
-        <article class="know-card reveal"><span><svg><use href="#i-layers"/></svg></span><p>На каких задачах и решениях стоит сосредоточиться в первую очередь</p></article>
-        <article class="know-card is-accent reveal"><span><svg><use href="#i-scale"/></svg></span><p>Что сделать, чтобы сократить затраты и заработать больше</p></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Почему аутсорсинг -->
-  <section class="section">
-    <div class="container split split--reverse">
-      <div class="split-text">
-        <span class="eyebrow reveal">Ваш надёжный партнёр</span>
-        <h2 class="reveal">Почему выбирают <em>аутсорсинг:</em></h2>
-        <ul class="srv-list srv-list--narrow">
-          <li class="reveal"><span><svg><use href="#i-user"/></svg></span>Опытный специалист появляется в компании сразу, без долгого поиска</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-team"/></svg></span>Не нужно тратиться на подбор, адаптацию и оформление нового сотрудника</li>
-          <li class="reveal"><span><svg><use href="#i-receipt"/></svg></span>Собственник оплачивает результат, а не часы в офисе</li>
-          <li class="is-accent reveal"><span><svg><use href="#i-clock"/></svg></span>Аутсорсер не болеет, не уходит в отпуск и не нуждается в соцпакете</li>
-        </ul>
-      </div>
-      <div class="split-visual reveal" aria-hidden="true">
-        <div class="savings-arc"></div>
-        <div class="savings-coin">
-          <svg><use href="#i-team"/></svg>
+      <div class="compare compare--simple reveal">
+        <div class="compare-stat">
           <strong>CFO</strong>
-          <span>без найма в штат</span>
+          <span>опытный финансовый директор без найма в штат</span>
+          <button class="btn btn--white" data-modal-open>Обсудить задачи</button>
+        </div>
+        <div class="compare-points">
+          <h2>Почему выбирают аутсорсинг</h2>
+          <ul class="checks">
+            <li>опытный специалист появляется в компании сразу, без долгого поиска</li>
+            <li>не нужно тратиться на подбор, адаптацию и оформление сотрудника</li>
+            <li>собственник оплачивает результат, а не часы в офисе</li>
+            <li>аутсорсер не болеет, не уходит в отпуск и не нуждается в соцпакете</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -247,10 +229,9 @@
     <div class="container">
       <div class="contact-box reveal">
         <div class="contact-info">
-          <span class="eyebrow">Надёжный партнёр в финансовых вопросах</span>
+          <span class="tag tag--light">Надёжный партнёр в финансовых вопросах</span>
           <h2>Убедитесь сами</h2>
           <p>Оставьте заявку на бесплатную консультацию — мы перезвоним и ответим на все ваши вопросы.</p>
-          <a class="logo logo--big" href="#top"><span class="logo-mark">БП</span><span class="logo-text">Баланс<b>Про</b></span></a>
           <ul class="contact-list">
             <li><svg><use href="#i-mail"/></svg><div><h3>E-mail</h3><a href="mailto:info@balanspro.by">info@balanspro.by</a></div></li>
             <li><svg><use href="#i-phone"/></svg><div><h3>Телефон</h3><a href="tel:+375290000000">+375 (29) 000-00-00</a></div></li>
@@ -258,12 +239,13 @@
           </ul>
         </div>
         <form class="contact-form" data-form novalidate>
-          <span class="eyebrow">Остались вопросы? Напишите нам</span>
           <h2>Форма заявки</h2>
-          <label>Ваше имя<input name="name" type="text" autocomplete="name" required></label>
-          <label>Телефон<input name="phone" type="tel" autocomplete="tel" required></label>
+          <div class="form-row">
+            <label>Ваше имя<input name="name" type="text" autocomplete="name" required></label>
+            <label>Телефон<input name="phone" type="tel" autocomplete="tel" required></label>
+          </div>
           <label>E-mail<input name="email" type="email" autocomplete="email"></label>
-          <label>Сообщение (по желанию)<textarea name="message" rows="4"></textarea></label>
+          <label>Сообщение (по желанию)<textarea name="message" rows="3"></textarea></label>
           <label class="check"><input type="checkbox" required> Я согласен с <a href="#">политикой обработки персональных данных</a></label>
           <button class="btn btn--primary" type="submit">Отправить заявку</button>
           <p class="form-status" role="status"></p>
@@ -277,32 +259,28 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-about">
-      <a class="logo" href="#top"><span class="logo-mark">БП</span><span class="logo-text">Баланс<b>Про</b></span></a>
+      <a class="logo logo--light" href="#top"><span class="logo-mark">БП</span><span class="logo-text">Баланс<b>Про</b></span></a>
       <p>ООО «БалансПро»<br>г. Минск, ул. Примерная, д. 1, офис 10</p>
     </div>
     <ul class="footer-links">
-      <li><a href="../#services">Бухгалтерия для ИП</a></li>
-      <li><a href="../#services">Учёт для продавцов на маркетплейсах</a></li>
-      <li><a href="../#services">Бухгалтерский и налоговый учёт организаций</a></li>
-      <li><a href="../#services">Отдельные участки учёта</a></li>
+      <li><a href="../#services">Бухгалтерия для ИП и ООО</a></li>
+      <li><a href="../#services">Учёт для маркетплейсов</a></li>
       <li><a href="../#services">Расчёт заработной платы</a></li>
-      <li><a href="../#services">Авансовые отчёты</a></li>
-    </ul>
-    <ul class="footer-links">
-      <li><a href="../#services">Бухгалтерия для ООО</a></li>
       <li><a href="./">Финансовый директор на аутсорсе</a></li>
     </ul>
     <div class="footer-contacts">
+      <a class="header-phone" href="tel:+375290000000">+375 (29) 000-00-00</a>
       <div class="footer-messengers">
         <a class="messenger" href="https://t.me/" aria-label="Telegram"><svg><use href="#i-tg"/></svg></a>
         <a class="messenger" href="viber://chat?number=" aria-label="Viber"><svg><use href="#i-viber"/></svg></a>
+        <a class="messenger" href="mailto:info@balanspro.by" aria-label="E-mail"><svg><use href="#i-mail"/></svg></a>
       </div>
-      <a class="header-phone" href="tel:+375290000000">+375 (29) 000-00-00</a>
-      <button class="btn btn--outline btn--sm" data-modal-open>Заказать звонок</button>
-      <a class="footer-policy" href="#">Политика конфиденциальности</a>
     </div>
   </div>
-  <div class="footer-bottom">© БалансПро, все права защищены</div>
+  <div class="container footer-bottom">
+    <span>© БалансПро, все права защищены</span>
+    <a href="#">Политика конфиденциальности</a>
+  </div>
 </footer>
 
 <!-- Плавающая кнопка связи -->

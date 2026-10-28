@@ -123,6 +123,15 @@ if (slider) {
   goTo(0);
 }
 
+// Links to the full list of works open the collapsed list
+const worklist = document.getElementById('price-list');
+if (worklist) {
+  const openWorklist = () => { if (location.hash === '#price-list') worklist.open = true; };
+  document.querySelectorAll('a[href="#price-list"]').forEach((a) => a.addEventListener('click', () => { worklist.open = true; }));
+  window.addEventListener('hashchange', openWorklist);
+  openWorklist();
+}
+
 // Modal
 const modal = document.querySelector('[data-modal]');
 let lastFocus = null;
