@@ -11,7 +11,7 @@
 
 ## Публикация
 
-Сайт деплоится на GitHub Pages workflow-ом `.github/workflows/pages.yml` при каждом пуше в ветку `claude/hopeful-dirac-ur2n4w`: https://jmsbrn.github.io/konnaya-ferma/
+Сайт деплоится на GitHub Pages workflow-ом `.github/workflows/pages.yml` при каждом пуше в ветки `claude/hopeful-dirac-ur2n4w` и `claude/awesome-darwin-x03qh7`: https://jmsbrn.github.io/konnaya-ferma/ (сайт «БалансПро» — https://jmsbrn.github.io/konnaya-ferma/buhgalteriya/)
 
 ## Сайт бухгалтерской компании «БалансПро»
 

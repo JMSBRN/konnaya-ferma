@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [claude/hopeful-dirac-ur2n4w]
+    branches: [claude/hopeful-dirac-ur2n4w, claude/awesome-darwin-x03qh7]
   workflow_dispatch:
 
 permissions:
