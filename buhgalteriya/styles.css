@@ -373,25 +373,56 @@ button { font: inherit; cursor: pointer; }
 .tile--8 { --tile-bg: linear-gradient(140deg, #9a8fb3, #3a2f52); }
 .tile::after { background-image: var(--tile-bg), radial-gradient(circle at 30% 20%, rgba(255,255,255,.25), transparent 50%); background-blend-mode: soft-light; }
 
-/* ---------- Клиенты и партнёрство ---------- */
+/* ---------- Клиенты и партнёрство (фирменные цвета VARKA) ---------- */
 .eyebrow--center { text-align: center; color: var(--accent); }
 #clients .section-title { margin-bottom: 40px; }
-.partner { display: grid; grid-template-columns: 420px 1fr; gap: 50px; align-items: center; }
+.partner {
+  --varka: #d1cc52;
+  --varka-dark: #8f8b2c;
+  --varka-amber: #e1a329;
+  --varka-cream: #fff7e8;
+  --varka-ink: #1b1b1b;
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 56px;
+  align-items: center;
+  padding: 50px;
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(209, 204, 82, .45), transparent 45%),
+    radial-gradient(circle at 100% 100%, rgba(225, 163, 41, .3), transparent 45%),
+    var(--varka-cream);
+  overflow: hidden;
+}
+.partner::after {
+  content: "VARKA";
+  position: absolute;
+  right: -10px;
+  bottom: -40px;
+  font-family: "Comfortaa", var(--font);
+  font-size: 180px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(27, 27, 27, .04);
+  pointer-events: none;
+}
 .partner-card {
   position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
-  padding: 70px 30px 40px;
+  gap: 10px;
+  padding: 72px 30px 36px;
   border-radius: var(--radius);
-  background: linear-gradient(var(--white), var(--white)) padding-box, var(--grad) border-box;
-  border: 3px solid transparent;
-  box-shadow: var(--shadow);
+  background: var(--white);
+  border: 3px solid var(--varka);
+  box-shadow: 0 0 0 10px rgba(209, 204, 82, .25), 0 24px 50px rgba(143, 139, 44, .25);
   text-align: center;
   transition: transform .25s, box-shadow .25s;
 }
-.partner-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(43, 33, 64, .14); }
+.partner-card:hover { transform: translateY(-6px); box-shadow: 0 0 0 14px rgba(209, 204, 82, .3), 0 30px 60px rgba(143, 139, 44, .3); }
 .partner-badge {
   position: absolute;
   top: 20px;
@@ -402,33 +433,62 @@ button { font: inherit; cursor: pointer; }
   gap: 6px;
   padding: 6px 14px;
   border-radius: 30px;
-  background: var(--soft);
-  color: var(--accent);
+  background: var(--varka);
+  color: var(--varka-ink);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .04em;
   white-space: nowrap;
 }
 .partner-badge svg { font-size: 16px; }
-.partner-icon {
-  display: grid;
-  place-items: center;
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  background: var(--grad);
-  color: var(--white);
-  font-size: 48px;
+.partner-logo { width: 160px; height: 140px; object-fit: contain; }
+.partner-logo[hidden], .partner-wordmark[hidden] { display: none; }
+.partner-wordmark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-family: "Comfortaa", var(--font);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--varka-ink);
 }
-.partner-name { font-size: 32px; font-weight: 800; color: var(--ink); letter-spacing: .01em; }
-.partner-site { display: inline-flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 600; color: var(--accent); }
+.partner-wordmark svg { font-size: 64px; }
+.partner-tagline { font-family: "Comfortaa", var(--font); font-size: 16px; font-weight: 700; color: var(--varka-dark); }
+.partner-site { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 15px; font-weight: 700; color: var(--varka-ink); border-bottom: 2px solid var(--varka); }
 .partner-site svg { font-size: 16px; transform: rotate(-45deg); }
-.partner-text h3 { font-size: clamp(22px, 2.4vw, 28px); font-weight: 800; margin-bottom: 18px; }
-.partner-text p { margin-bottom: 14px; }
-.checks.checks--dark { margin: 4px 0 28px; }
-.checks.checks--dark li { color: var(--ink); font-weight: 600; font-size: 16px; }
-.checks.checks--dark li::before { background-color: var(--soft); }
+
+.partner-text { position: relative; z-index: 1; color: var(--varka-ink); }
+.partner-chip {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: var(--varka-ink);
+  color: var(--varka);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.partner-text h3 { font-size: clamp(24px, 2.8vw, 34px); font-weight: 800; color: var(--varka-ink); margin-bottom: 18px; }
+.partner-text mark {
+  padding: 0 .15em;
+  border-radius: 6px;
+  background: linear-gradient(transparent 55%, var(--varka) 55%);
+  color: inherit;
+  font-family: "Comfortaa", var(--font);
+}
+.partner-text p { margin-bottom: 14px; color: #3d3a2a; }
+.checks.checks--varka { margin: 4px 0 28px; }
+.checks.checks--varka li { color: var(--varka-ink); font-weight: 600; font-size: 16px; }
+.checks.checks--varka li::before {
+  background: var(--varka) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231b1b1b' d='M9.5 16.2L5.3 12l-1.4 1.4 5.6 5.6 11-11-1.4-1.4z'/%3E%3C/svg%3E") center / 16px no-repeat;
+}
+.btn--varka { background: var(--varka-ink); color: var(--varka); }
+.btn--varka:hover { background: #000; box-shadow: 0 10px 24px rgba(27, 27, 27, .25); }
 
 /* ---------- Преимущества ---------- */
 .adv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
@@ -924,7 +984,7 @@ button { font: inherit; cursor: pointer; }
 
   .intro { grid-template-columns: 1fr; gap: 10px; }
   .tiles { grid-template-columns: repeat(2, 1fr); }
-  .partner { grid-template-columns: 1fr; gap: 36px; }
+  .partner { grid-template-columns: 1fr; gap: 40px; padding: 40px 30px; }
   .partner-card { max-width: 460px; width: 100%; margin: 0 auto; }
   .adv-grid { grid-template-columns: repeat(2, 1fr); }
 
@@ -964,7 +1024,9 @@ button { font: inherit; cursor: pointer; }
   .tile h3 { font-size: 14px; }
   .tile svg { font-size: 56px; top: 16px; right: 14px; }
 
-  .partner-name { font-size: 26px; }
+  .partner { padding: 30px 18px; border-radius: 24px; }
+  .partner::after { font-size: 110px; }
+  .btn--varka { width: 100%; }
   .adv-grid { grid-template-columns: 1fr; gap: 20px; }
 
   .srv-list li, .srv-list li.is-accent { margin: 0; padding: 18px; }
