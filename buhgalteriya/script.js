@@ -16,6 +16,28 @@ nav.addEventListener('click', (e) => {
   }
 });
 
+// Dropdowns: hover on desktop, tap to expand in the mobile menu
+nav.querySelectorAll('.nav-sub-toggle').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.nav-item');
+    const open = !item.classList.contains('is-open');
+    nav.querySelectorAll('.nav-item.is-open').forEach((el) => {
+      el.classList.remove('is-open');
+      el.querySelector('.nav-sub-toggle').setAttribute('aria-expanded', 'false');
+    });
+    item.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', String(open));
+  });
+});
+
+document.addEventListener('click', (e) => {
+  if (e.target.closest('.nav-item')) return;
+  nav.querySelectorAll('.nav-item.is-open').forEach((el) => {
+    el.classList.remove('is-open');
+    el.querySelector('.nav-sub-toggle').setAttribute('aria-expanded', 'false');
+  });
+});
+
 // Header shadow and "to top" button
 const header = document.querySelector('.site-header');
 const toTop = document.querySelector('.to-top');
