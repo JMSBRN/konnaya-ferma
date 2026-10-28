@@ -442,7 +442,7 @@ button { font: inherit; cursor: pointer; }
   white-space: nowrap;
 }
 .partner-badge svg { font-size: 16px; }
-.partner-logo { width: 160px; height: 140px; object-fit: contain; }
+.partner-logo { width: 140px; height: auto; }
 .partner-logo[hidden], .partner-wordmark[hidden] { display: none; }
 .partner-wordmark {
   display: flex;
