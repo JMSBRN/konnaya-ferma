@@ -63,7 +63,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
 
 // Highlight the nav link of the section in view
-const links = [...nav.querySelectorAll('a')];
+const links = [...nav.querySelectorAll('a[href^="#"]')];
 const targets = links.map((a) => document.querySelector(a.getAttribute('href'))).filter(Boolean);
 
 const navObserver = new IntersectionObserver((entries) => {
@@ -75,51 +75,53 @@ const navObserver = new IntersectionObserver((entries) => {
 
 targets.forEach((t) => navObserver.observe(t));
 
-// Reviews slider
+// Reviews slider (only on pages that have one)
 const slider = document.querySelector('[data-slider]');
-const track = slider.querySelector('.slider-track');
-const slides = [...track.children];
-const dotsBox = slider.querySelector('.slider-dots');
-let current = 0;
+if (slider) {
+  const track = slider.querySelector('.slider-track');
+  const slides = [...track.children];
+  const dotsBox = slider.querySelector('.slider-dots');
+  let current = 0;
 
-const perView = () => (window.innerWidth > 1024 ? 2 : 1);
-const pages = () => Math.ceil(slides.length / perView());
+  const perView = () => (window.innerWidth > 1024 ? 2 : 1);
+  const pages = () => Math.ceil(slides.length / perView());
 
-const renderDots = () => {
-  dotsBox.innerHTML = '';
-  for (let i = 0; i < pages(); i++) {
-    const dot = document.createElement('button');
-    dot.setAttribute('aria-label', `Отзывы, страница ${i + 1}`);
-    dot.addEventListener('click', () => goTo(i));
-    dotsBox.append(dot);
-  }
-};
+  const renderDots = () => {
+    dotsBox.innerHTML = '';
+    for (let i = 0; i < pages(); i++) {
+      const dot = document.createElement('button');
+      dot.setAttribute('aria-label', `Отзывы, страница ${i + 1}`);
+      dot.addEventListener('click', () => goTo(i));
+      dotsBox.append(dot);
+    }
+  };
 
-const goTo = (i) => {
-  current = (i + pages()) % pages();
-  track.style.transform = `translateX(-${current * 100}%)`;
-  [...dotsBox.children].forEach((d, n) => d.classList.toggle('is-active', n === current));
-};
+  const goTo = (i) => {
+    current = (i + pages()) % pages();
+    track.style.transform = `translateX(-${current * 100}%)`;
+    [...dotsBox.children].forEach((d, n) => d.classList.toggle('is-active', n === current));
+  };
 
-slider.querySelector('.slider-btn--prev').addEventListener('click', () => goTo(current - 1));
-slider.querySelector('.slider-btn--next').addEventListener('click', () => goTo(current + 1));
+  slider.querySelector('.slider-btn--prev').addEventListener('click', () => goTo(current - 1));
+  slider.querySelector('.slider-btn--next').addEventListener('click', () => goTo(current + 1));
 
-let autoplay = setInterval(() => goTo(current + 1), 7000);
-slider.addEventListener('mouseenter', () => clearInterval(autoplay));
-slider.addEventListener('mouseleave', () => { autoplay = setInterval(() => goTo(current + 1), 7000); });
+  let autoplay = setInterval(() => goTo(current + 1), 7000);
+  slider.addEventListener('mouseenter', () => clearInterval(autoplay));
+  slider.addEventListener('mouseleave', () => { autoplay = setInterval(() => goTo(current + 1), 7000); });
 
-let touchX = null;
-track.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
-track.addEventListener('touchend', (e) => {
-  if (touchX === null) return;
-  const dx = e.changedTouches[0].clientX - touchX;
-  if (Math.abs(dx) > 40) goTo(current + (dx < 0 ? 1 : -1));
-  touchX = null;
-});
+  let touchX = null;
+  track.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', (e) => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 40) goTo(current + (dx < 0 ? 1 : -1));
+    touchX = null;
+  });
 
-window.addEventListener('resize', () => { renderDots(); goTo(Math.min(current, pages() - 1)); });
-renderDots();
-goTo(0);
+  window.addEventListener('resize', () => { renderDots(); goTo(Math.min(current, pages() - 1)); });
+  renderDots();
+  goTo(0);
+}
 
 // Modal
 const modal = document.querySelector('[data-modal]');

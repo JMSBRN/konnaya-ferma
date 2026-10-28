@@ -594,8 +594,8 @@ button { font: inherit; cursor: pointer; }
 }
 .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px rgba(34, 201, 158, .18); }
 .contact-form .is-invalid { border-color: #ef4444 !important; }
-.contact-form label.check { flex-direction: row; align-items: center; gap: 10px; font-weight: 400; }
-.contact-form label.check input { width: 18px; height: 18px; accent-color: var(--green); }
+.contact-form label.check { display: block; font-weight: 400; }
+.contact-form label.check input { width: 18px; height: 18px; margin: 0 8px 0 0; vertical-align: -4px; accent-color: var(--green); }
 .contact-form label.check.is-invalid { color: #ef4444; }
 .contact-form label.check a { color: var(--blue); }
 .contact-form .btn { align-self: flex-start; min-width: 220px; }
@@ -719,6 +719,115 @@ button { font: inherit; cursor: pointer; }
 
 @keyframes fade { from { opacity: 0; } }
 @keyframes pop { from { opacity: 0; transform: translateY(20px) scale(.97); } }
+
+/* ---------- Страница «Финансовый директор» ---------- */
+.btn--green { background: var(--green); color: var(--white); }
+.btn--green:hover { background: var(--green-dark); box-shadow: 0 10px 24px rgba(34, 201, 158, .35); }
+
+.hero-box.hero-box--solo { min-height: 0; padding-bottom: 60px; }
+.hero-lead { font-weight: 600; margin-bottom: 16px !important; }
+.checks { list-style: none; margin: 0 0 32px; padding: 0; display: grid; gap: 8px; }
+.checks li { position: relative; padding-left: 34px; font-size: 17px; }
+.checks li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2322c99e' d='M9.5 16.2L5.3 12l-1.4 1.4 5.6 5.6 11-11-1.4-1.4z'/%3E%3C/svg%3E") center / 16px no-repeat;
+}
+.sheet-kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+.sheet-kpis div { padding: 10px 12px; border-radius: 12px; background: var(--soft); }
+.sheet-kpis small { display: block; font-size: 11px; color: var(--muted); }
+.sheet-kpis b { font-size: 20px; color: var(--ink); }
+.sheet-line { width: 100%; height: 90px; margin-bottom: 14px; }
+
+.list-col--top { padding-top: 0; align-self: start; }
+.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.why-grid h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.split-text h2 { font-size: clamp(26px, 3vw, 38px); font-weight: 800; text-transform: uppercase; margin-bottom: 20px; }
+.split-text > p { font-size: 17px; margin-bottom: 30px; }
+.srv-list--narrow { max-width: 520px; }
+.split-visual { position: relative; height: 420px; display: grid; place-items: center; }
+.split-visual .savings-arc { bottom: auto; }
+.split-visual .savings-coin { margin-top: 0; }
+
+.dash {
+  padding: 22px;
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, .12);
+  border: 1px solid var(--line);
+}
+.dash-top { display: flex; align-items: center; gap: 6px; margin-bottom: 18px; font-size: 14px; color: var(--ink); }
+.dash-top b { margin-left: 10px; }
+.dash-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+.dash-dot:first-child { background: var(--green); }
+.dash-kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 18px; }
+.dash-kpis div { padding: 12px 14px; border-radius: 12px; background: var(--soft); }
+.dash-kpis small { display: block; font-size: 12px; color: var(--muted); }
+.dash-kpis b { display: block; font-size: 20px; color: var(--ink); }
+.dash-kpis i { font-style: normal; font-size: 12px; font-weight: 700; }
+.dash-kpis .up { color: var(--green-dark); }
+.dash-kpis .down { color: var(--blue); }
+.dash-body { display: grid; grid-template-columns: 1fr 150px; gap: 18px; align-items: center; }
+.dash-bars { display: flex; align-items: flex-end; gap: 10px; height: 170px; padding-bottom: 4px; border-bottom: 2px solid var(--line); }
+.dash-bars b { flex: 1; border-radius: 6px 6px 2px 2px; background: var(--grad); }
+.dash-donut {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: conic-gradient(var(--green) 0 64%, var(--soft) 64% 100%);
+  position: relative;
+}
+.dash-donut::before { content: ""; position: absolute; inset: 18px; border-radius: 50%; background: var(--white); }
+.dash-donut span, .dash-donut small { position: relative; }
+.dash-donut span { font-size: 26px; font-weight: 800; color: var(--ink); line-height: 1; }
+.dash-donut small { font-size: 12px; color: var(--muted); }
+
+.know-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.know-card { padding: 30px 26px; border-radius: 14px; background: var(--white); box-shadow: var(--shadow); color: var(--ink); }
+.know-card.is-accent { background: var(--green); color: var(--white); }
+.know-card > span {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: var(--green);
+  color: var(--white);
+  font-size: 22px;
+}
+.know-card.is-accent > span { background: var(--white); color: var(--green); }
+
+@media (max-width: 1024px) {
+  .hero-box.hero-box--solo { padding-bottom: 50px; }
+  .why-grid, .know-grid { grid-template-columns: repeat(2, 1fr); }
+  .split { grid-template-columns: 1fr; gap: 40px; }
+  .split--reverse .split-visual { order: -1; height: 320px; }
+}
+
+@media (max-width: 640px) {
+  .hero-box.hero-box--solo { padding-bottom: 40px; }
+  .checks li { font-size: 15px; }
+  .why-grid, .know-grid { grid-template-columns: 1fr; gap: 16px; }
+  .dash { padding: 16px; }
+  .dash-kpis { grid-template-columns: 1fr 1fr; }
+  .dash-kpis div:last-child { grid-column: 1 / -1; }
+  .dash-body { grid-template-columns: 1fr 110px; }
+  .dash-bars { height: 120px; gap: 6px; }
+  .dash-donut::before { inset: 14px; }
+  .dash-donut span { font-size: 20px; }
+  .split-visual .savings-arc { width: 260px; height: 260px; }
+  .split-visual .savings-coin { width: 190px; height: 190px; }
+}
 
 /* ---------- Появление при прокрутке ---------- */
 .js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
