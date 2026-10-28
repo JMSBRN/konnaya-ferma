@@ -38,6 +38,7 @@
   <symbol id="i-viber" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c5.5 0 9 2.7 9 8.5S17.5 19 12 19c-.8 0-1.6-.1-2.3-.2L6 21.5V18c-2-1.4-3-4-3-7.5C3 4.7 6.5 2 12 2zm-2.6 4.6c-.3 0-.7.1-1 .5-.4.4-.9 1.2-.6 2.3.6 2.1 2.4 4.4 4.8 5.6 1.2.6 2 .4 2.5 0 .4-.4.5-.8.4-1.1l-1.6-1c-.3-.2-.6-.1-.8.1l-.5.6c-.9-.3-2.1-1.5-2.4-2.4l.6-.5c.2-.2.3-.5.1-.8l-1-1.6c-.1-.2-.3-.3-.5-.3z"/></symbol>
   <symbol id="i-close" viewBox="0 0 24 24"><path fill="currentColor" d="M6.4 5L12 10.6 17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19 5 17.6 10.6 12 5 6.4 6.4 5z"/></symbol>
   <symbol id="i-chevron" viewBox="0 0 24 24"><path fill="currentColor" d="M7.4 8.6L12 13.2l4.6-4.6L18 10l-6 6-6-6 1.4-1.4z"/></symbol>
+  <symbol id="i-cup" viewBox="0 0 24 24"><path fill="currentColor" d="M4 8h13v5a6 6 0 01-6 6H10a6 6 0 01-6-6V8zm13 1h1.5a3 3 0 010 6H17v-2h1.5a1 1 0 000-2H17V9zM3 20h15v2H3v-2zM8 2h1.6c.4 1-.6 1.6-.2 3H7.8C7.4 3.6 8.4 3 8 2zm4 0h1.6c.4 1-.6 1.6-.2 3h-1.6c-.4-1.4.6-2 .2-3z"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="currentColor" d="M14.5 5l7 7-7 7-1.4-1.4 4.6-4.6H3v-2h14.7l-4.6-4.6L14.5 5z"/></symbol>
 </svg>
 
@@ -162,24 +163,28 @@
     </div>
   </section>
 
-  <!-- Рекомендации -->
-  <section class="section section--tight">
-    <div class="container recommend">
-      <div class="recommend-text reveal">
-        <span class="eyebrow">Нам доверяют</span>
-        <h2>Сделайте свой бизнес <em>сильнее</em> конкурентов</h2>
-        <p>Передавая бухгалтерию нам, вы получаете учёт «под ключ»: выстроенный сбор документов, аккуратное ведение всех участков, своевременную отчётность и консультации по финансовым вопросам.</p>
-        <p>Мы стремимся к тому, чтобы финансы наших клиентов были прозрачными и управляемыми, а руководители занимались развитием компании, а не бухгалтерскими хлопотами.</p>
-      </div>
-      <div class="recommend-card reveal">
-        <div class="recommend-visual" aria-hidden="true">
-          <span class="bubble bubble--1"><svg><use href="#i-team"/></svg></span>
-          <span class="bubble bubble--2"><svg><use href="#i-chat"/></svg></span>
-          <span class="bubble bubble--3"><svg><use href="#i-shield"/></svg></span>
-        </div>
-        <div class="recommend-band">
-          <p><strong>Каждый второй клиент</strong> приходит к нам по совету партнёров и знакомых</p>
-          <button class="btn btn--white" data-modal-open>Получить бесплатную консультацию</button>
+  <!-- Клиенты и партнёрство -->
+  <section class="section section--tight" id="clients">
+    <div class="container">
+      <span class="eyebrow eyebrow--center reveal">Нам доверяют</span>
+      <h2 class="section-title reveal">Наши <em>клиенты</em></h2>
+      <div class="partner">
+        <a class="partner-card reveal" href="https://varkacoffee.by/" target="_blank" rel="noopener">
+          <span class="partner-badge"><svg><use href="#i-shield"/></svg>Официальный партнёр</span>
+          <span class="partner-icon"><svg><use href="#i-cup"/></svg></span>
+          <strong class="partner-name">Varka Coffee</strong>
+          <span class="partner-site">varkacoffee.by <svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <div class="partner-text reveal">
+          <h3>Официальный партнёр сети Varka&nbsp;Coffee по&nbsp;бухгалтерскому аутсорсингу</h3>
+          <p>БалансПро — официальный аутсорсинговый партнёр сети Varka Coffee. Сеть доверила нам бухгалтерское сопровождение, и мы отвечаем за то, чтобы учёт и отчётность были в порядке.</p>
+          <p>Если у вас тоже сеть или несколько точек, мы знаем, как выстроить учёт:</p>
+          <ul class="checks checks--dark">
+            <li>единый учёт по всем точкам сети</li>
+            <li>расчёт зарплаты для сменного персонала</li>
+            <li>регулярная управленческая отчётность для собственника</li>
+          </ul>
+          <button class="btn btn--primary" data-modal-open>Обсудить сотрудничество</button>
         </div>
       </div>
     </div>

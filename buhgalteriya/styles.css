@@ -373,37 +373,62 @@ button { font: inherit; cursor: pointer; }
 .tile--8 { --tile-bg: linear-gradient(140deg, #9a8fb3, #3a2f52); }
 .tile::after { background-image: var(--tile-bg), radial-gradient(circle at 30% 20%, rgba(255,255,255,.25), transparent 50%); background-blend-mode: soft-light; }
 
-/* ---------- Рекомендации ---------- */
-.recommend { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: stretch; }
-.recommend-text { padding: 40px 50px; border-radius: var(--radius); background: var(--soft); }
-.recommend-text h2 { font-size: clamp(26px, 3vw, 36px); font-weight: 800; text-transform: uppercase; margin-bottom: 18px; }
-.recommend-text p { font-size: 16px; }
-.recommend-text p + p { margin-top: 22px; }
-
-.recommend-card { display: flex; flex-direction: column; border-radius: var(--radius); background: var(--soft); overflow: hidden; }
-.recommend-visual {
+/* ---------- Клиенты и партнёрство ---------- */
+.eyebrow--center { text-align: center; color: var(--accent); }
+#clients .section-title { margin-bottom: 40px; }
+.partner { display: grid; grid-template-columns: 420px 1fr; gap: 50px; align-items: center; }
+.partner-card {
   position: relative;
-  flex: 1;
-  min-height: 240px;
-  background:
-    radial-gradient(ellipse at 85% 100%, rgba(95, 128, 232, .35), transparent 55%),
-    radial-gradient(ellipse at 20% 100%, rgba(134, 87, 204, .3), transparent 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 70px 30px 40px;
+  border-radius: var(--radius);
+  background: linear-gradient(var(--white), var(--white)) padding-box, var(--grad) border-box;
+  border: 3px solid transparent;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform .25s, box-shadow .25s;
 }
-.bubble {
+.partner-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(43, 33, 64, .14); }
+.partner-badge {
   position: absolute;
+  top: 20px;
+  left: 50%;
+  translate: -50% 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 30px;
+  background: var(--soft);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+.partner-badge svg { font-size: 16px; }
+.partner-icon {
   display: grid;
   place-items: center;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
-  background: var(--white);
-  box-shadow: var(--shadow);
-  color: var(--accent);
+  background: var(--grad);
+  color: var(--white);
+  font-size: 48px;
 }
-.bubble--1 { width: 120px; height: 120px; font-size: 56px; left: 50%; top: 50%; translate: -50% -50%; }
-.bubble--2 { width: 70px; height: 70px; font-size: 30px; left: 20%; top: 25%; color: var(--blue); animation: float 6s infinite ease-in-out; }
-.bubble--3 { width: 80px; height: 80px; font-size: 34px; right: 18%; top: 18%; animation: float 7s infinite ease-in-out .8s; }
-.recommend-band { padding: 26px 30px; background: var(--grad); color: var(--white); border-radius: var(--radius) var(--radius) 0 0; }
-.recommend-band p { font-size: 22px; font-weight: 800; text-transform: uppercase; line-height: 1.35; margin-bottom: 18px; }
-.recommend-band strong { font-weight: 900; }
+.partner-name { font-size: 32px; font-weight: 800; color: var(--ink); letter-spacing: .01em; }
+.partner-site { display: inline-flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 600; color: var(--accent); }
+.partner-site svg { font-size: 16px; transform: rotate(-45deg); }
+.partner-text h3 { font-size: clamp(22px, 2.4vw, 28px); font-weight: 800; margin-bottom: 18px; }
+.partner-text p { margin-bottom: 14px; }
+.checks.checks--dark { margin: 4px 0 28px; }
+.checks.checks--dark li { color: var(--ink); font-weight: 600; font-size: 16px; }
+.checks.checks--dark li::before { background-color: var(--soft); }
 
 /* ---------- Преимущества ---------- */
 .adv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
@@ -899,7 +924,8 @@ button { font: inherit; cursor: pointer; }
 
   .intro { grid-template-columns: 1fr; gap: 10px; }
   .tiles { grid-template-columns: repeat(2, 1fr); }
-  .recommend { grid-template-columns: 1fr; }
+  .partner { grid-template-columns: 1fr; gap: 36px; }
+  .partner-card { max-width: 460px; width: 100%; margin: 0 auto; }
   .adv-grid { grid-template-columns: repeat(2, 1fr); }
 
   .savings { grid-template-columns: 1fr; }
@@ -938,8 +964,7 @@ button { font: inherit; cursor: pointer; }
   .tile h3 { font-size: 14px; }
   .tile svg { font-size: 56px; top: 16px; right: 14px; }
 
-  .recommend-text { padding: 30px 24px; }
-  .recommend-band p { font-size: 18px; }
+  .partner-name { font-size: 26px; }
   .adv-grid { grid-template-columns: 1fr; gap: 20px; }
 
   .srv-list li, .srv-list li.is-accent { margin: 0; padding: 18px; }
