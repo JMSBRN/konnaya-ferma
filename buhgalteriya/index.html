@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Бухгалтерское сопровождение бизнеса в Минске | БалансПро</title>
+  <meta name="description" content="Бухгалтерский аутсорсинг в Минске для ООО и ИП: ведение учёта, зарплата, налоговая отчётность. Работаем с бизнесом любого масштаба по понятным ценам.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Набор иконок -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-gears" viewBox="0 0 24 24"><path fill="currentColor" d="M9.5 2l.5 2.1c.6.2 1.1.5 1.6.9l2-.7 1.5 2.6-1.6 1.4c.1.6.1 1.2 0 1.8l1.6 1.4-1.5 2.6-2-.7c-.5.4-1 .7-1.6.9L9.5 16h-3L6 13.9c-.6-.2-1.1-.5-1.6-.9l-2 .7L.9 11.1l1.6-1.4c-.1-.6-.1-1.2 0-1.8L.9 6.5l1.5-2.6 2 .7c.5-.4 1-.7 1.6-.9L6.5 2h3zM8 6.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM18 12l.4 1.4c.4.1.7.3 1 .6l1.4-.4.9 1.6-1 1c.1.4.1.8 0 1.2l1 1-.9 1.6-1.4-.4c-.3.3-.6.5-1 .6L18 22h-1.8l-.4-1.4c-.4-.1-.7-.3-1-.6l-1.4.4-.9-1.6 1-1a3 3 0 010-1.2l-1-1 .9-1.6 1.4.4c.3-.3.6-.5 1-.6l.4-1.4H18zm-.9 3.6a1.4 1.4 0 100 2.8 1.4 1.4 0 000-2.8z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h2v16h16v2H3V3zm16.3 3.3l1.4 1.4-6.2 6.2-3-3-3.8 3.8-1.4-1.4 5.2-5.2 3 3 4.8-4.8z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3zm-1 13.2l5.7-5.7-1.4-1.4L11 12.4 8.7 10.1l-1.4 1.4 3.7 3.7z"/></symbol>
+  <symbol id="i-team" viewBox="0 0 24 24"><path fill="currentColor" d="M8 11a3.5 3.5 0 110-7 3.5 3.5 0 010 7zm8.5 0a3 3 0 110-6 3 3 0 010 6zM1 19c0-3.3 3.1-6 7-6s7 2.7 7 6v1H1v-1zm15 1v-1c0-1.7-.6-3.2-1.6-4.4.4-.1.7-.1 1.1-.1 3.3 0 6 2.2 6 5v.5h-5.5z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 110 20 10 10 0 010-20zm0 2a8 8 0 100 16 8 8 0 000-16zm1 3v4.6l3.4 2-1 1.7L11 12.7V7h2z"/></symbol>
+  <symbol id="i-law" viewBox="0 0 24 24"><path fill="currentColor" d="M6 2h9l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm8 1.5V8h4.5L14 3.5zM7 11v2h10v-2H7zm0 4v2h7v-2H7z"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="currentColor" d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="currentColor" d="M4 3h16a2 2 0 012 2v11a2 2 0 01-2 2H8l-5 4V5a2 2 0 012-2zm3 6v2h2V9H7zm4 0v2h2V9h-2zm4 0v2h2V9h-2z"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path fill="currentColor" d="M11 3h2v2h6v2h-1.2l2.9 6.5c.2.5-.1 1-.5 1.2-.9.4-1.7.5-2.7.5s-1.8-.1-2.7-.5c-.4-.2-.7-.7-.5-1.2L17.2 7H13v12h4v2H7v-2h4V7H6.8l2.9 6.5c.2.5-.1 1-.5 1.2-.9.4-1.7.5-2.7.5s-1.8-.1-2.7-.5c-.4-.2-.7-.7-.5-1.2L6.2 7H5V5h6V3zM6 9.2L4.6 12.6h2.8L6 9.2zm12 0l-1.4 3.4h2.8L18 9.2z"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path fill="currentColor" d="M6 2h9l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm8 1.5V8h4.5L14 3.5zM8 12h8v2H8v-2zm0 4h8v2H8v-2z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a5 5 0 110-10 5 5 0 010 10zm-9 9c0-4.4 4-7 9-7s9 2.6 9 7v1H3v-1z"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path fill="currentColor" d="M2 3h3l2.6 11.2c.1.5.5.8 1 .8h9.7c.5 0 .9-.3 1-.8L21 7H6.4L6 5H2V3zm7 16a2 2 0 110 4 2 2 0 010-4zm8 0a2 2 0 110 4 2 2 0 010-4z"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 5h14v2H5v10h15v-3h-5a2 2 0 01-2-2v-1a2 2 0 012-2h7v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 011-2zm11 6v1h1v-1h-1z"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l10 5-10 5L2 7l10-5zm-7.8 8.4L12 14.3l7.8-3.9L22 11.5l-10 5-10-5 2.2-1.1zm0 4.5L12 18.8l7.8-3.9 2.2 1.1-10 5-10-5 2.2-1.1z"/></symbol>
+  <symbol id="i-receipt" viewBox="0 0 24 24"><path fill="currentColor" d="M5 2h14v20l-3-2-2 2-2-2-2 2-2-2-3 2V2zm3 5v2h8V7H8zm0 4v2h8v-2H8zm0 4v2h5v-2H8z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="currentColor" d="M11 4h2v7h7v2h-7v7h-2v-7H4v-2h7V4z"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path fill="currentColor" d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4.5 7H4v.6l8 5.6 8-5.6V7h-.5L12 12.2z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 017-7zm0 4.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.9 4.3l-3.1 14.8c-.2 1-.8 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-7.9c.4-.3-.1-.5-.6-.2L6.8 13l-4.7-1.5c-1-.3-1-1 .2-1.5l18.3-7c.9-.3 1.6.2 1.3 1.3z"/></symbol>
+  <symbol id="i-viber" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c5.5 0 9 2.7 9 8.5S17.5 19 12 19c-.8 0-1.6-.1-2.3-.2L6 21.5V18c-2-1.4-3-4-3-7.5C3 4.7 6.5 2 12 2zm-2.6 4.6c-.3 0-.7.1-1 .5-.4.4-.9 1.2-.6 2.3.6 2.1 2.4 4.4 4.8 5.6 1.2.6 2 .4 2.5 0 .4-.4.5-.8.4-1.1l-1.6-1c-.3-.2-.6-.1-.8.1l-.5.6c-.9-.3-2.1-1.5-2.4-2.4l.6-.5c.2-.2.3-.5.1-.8l-1-1.6c-.1-.2-.3-.3-.5-.3z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="currentColor" d="M6.4 5L12 10.6 17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19 5 17.6 10.6 12 5 6.4 6.4 5z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="currentColor" d="M14.5 5l7 7-7 7-1.4-1.4 4.6-4.6H3v-2h14.7l-4.6-4.6L14.5 5z"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#top" aria-label="БалансПро — на главную">
+      <span class="logo-mark">БП</span><span class="logo-text">Баланс<b>Про</b></span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="nav" class="nav">
+      <a href="#services">Бухгалтерские услуги</a>
+      <a href="#advantages">Преимущества</a>
+      <a href="#price-list">Виды работ</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="messenger" href="https://t.me/" aria-label="Telegram"><svg><use href="#i-tg"/></svg></a>
+      <a class="messenger" href="viber://chat?number=" aria-label="Viber"><svg><use href="#i-viber"/></svg></a>
+      <div class="header-call">
+        <a class="header-phone" href="tel:+375290000000">+375 (29) 000-00-00</a>
+        <button class="btn btn--outline btn--sm" data-modal-open>Заказать звонок</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Первый экран -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-box">
+        <div class="hero-text">
+          <h1>Бухгалтерское<br>сопровождение</h1>
+          <p>Мы разбираемся в том, как устроен бизнес наших клиентов. Глубокая экспертиза и знание отраслей позволяют вести учёт качественно и с учётом особенностей каждой компании.</p>
+          <button class="btn btn--white" data-modal-open>Получить бесплатную консультацию</button>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-circle"></div>
+          <div class="hero-sheet">
+            <div class="sheet-head"><span></span><span></span><span></span></div>
+            <div class="sheet-row"><i style="width:70%"></i></div>
+            <div class="sheet-row"><i style="width:45%"></i></div>
+            <div class="sheet-bars">
+              <b style="height:40%"></b><b style="height:62%"></b><b style="height:50%"></b><b style="height:80%"></b><b style="height:68%"></b><b style="height:95%"></b>
+            </div>
+            <div class="sheet-total">Баланс сошёлся <svg><use href="#i-shield"/></svg></div>
+          </div>
+          <div class="hero-badge hero-badge--top"><svg><use href="#i-chart"/></svg> +18% к прибыли</div>
+          <div class="hero-badge hero-badge--bottom"><svg><use href="#i-clock"/></svg> Отчёты вовремя</div>
+        </div>
+      </div>
+
+      <div class="hero-cards">
+        <article class="feature-card reveal">
+          <svg class="feature-icon"><use href="#i-gears"/></svg>
+          <h3>Опыт и глубокая экспертиза</h3>
+          <p>Учёт ведут практикующие специалисты по бухгалтерии и налогам</p>
+        </article>
+        <article class="feature-card reveal">
+          <svg class="feature-icon"><use href="#i-chart"/></svg>
+          <h3>Ресурсы под ваши задачи</h3>
+          <p>На аутсорсинге объём услуг легко меняется вслед за потребностями компании</p>
+        </article>
+        <article class="feature-card reveal">
+          <svg class="feature-icon"><use href="#i-shield"/></svg>
+          <h3>Меньше рисков, больше надёжности</h3>
+          <p>Соблюдаем требования законодательства и стандарты учёта и отчётности</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="intro">
+        <div class="intro-title reveal">
+          <span class="line"></span>
+          <h2><em>Возьмём</em> бухгалтерский учёт <em>на себя</em></h2>
+        </div>
+        <div class="intro-text reveal">
+          <p>Настроим понятный порядок сбора и передачи первичных документов.</p>
+          <p>Оказываем полный спектр бухгалтерских услуг: от комплексного обслуживания по абонентской плате до ведения отдельных участков учёта.</p>
+        </div>
+      </div>
+
+      <div class="tiles">
+        <a class="tile tile--1 reveal" href="#price-list"><svg><use href="#i-layers"/></svg><h3>Бухгалтерский и налоговый учёт организации</h3></a>
+        <a class="tile tile--2 reveal" href="#price-list"><svg><use href="#i-user"/></svg><h3>Бухгалтерия для индивидуальных предпринимателей</h3></a>
+        <a class="tile tile--3 reveal" href="#price-list"><svg><use href="#i-cart"/></svg><h3>Учёт для продавцов на маркетплейсах</h3></a>
+        <a class="tile tile--4 reveal" href="#price-list"><svg><use href="#i-wallet"/></svg><h3>Расчёт заработной платы</h3></a>
+        <a class="tile tile--5 reveal" href="#price-list"><svg><use href="#i-doc"/></svg><h3>Отдельные участки учёта</h3></a>
+        <a class="tile tile--6 reveal" href="#price-list"><svg><use href="#i-chat"/></svg><h3>Консультации бухгалтера</h3></a>
+        <a class="tile tile--7 reveal" href="#price-list"><svg><use href="#i-receipt"/></svg><h3>Оформление авансовых отчётов</h3></a>
+        <a class="tile tile--8 reveal" href="#price-list"><svg><use href="#i-plus"/></svg><h3>Прочие услуги</h3></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Рекомендации -->
+  <section class="section section--tight">
+    <div class="container recommend">
+      <div class="recommend-text reveal">
+        <span class="eyebrow">Нам доверяют</span>
+        <h2>Сделайте свой бизнес <em>сильнее</em> конкурентов</h2>
+        <p>Передавая бухгалтерию нам, вы получаете учёт «под ключ»: выстроенный сбор документов, аккуратное ведение всех участков, своевременную отчётность и консультации по финансовым вопросам.</p>
+        <p>Мы стремимся к тому, чтобы финансы наших клиентов были прозрачными и управляемыми, а руководители занимались развитием компании, а не бухгалтерскими хлопотами.</p>
+      </div>
+      <div class="recommend-card reveal">
+        <div class="recommend-visual" aria-hidden="true">
+          <span class="bubble bubble--1"><svg><use href="#i-team"/></svg></span>
+          <span class="bubble bubble--2"><svg><use href="#i-chat"/></svg></span>
+          <span class="bubble bubble--3"><svg><use href="#i-shield"/></svg></span>
+        </div>
+        <div class="recommend-band">
+          <p><strong>Каждый второй клиент</strong> приходит к нам по совету партнёров и знакомых</p>
+          <button class="btn btn--white" data-modal-open>Получить бесплатную консультацию</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Преимущества -->
+  <section class="section" id="advantages">
+    <div class="container">
+      <h2 class="section-title reveal">Наши <em>преимущества</em></h2>
+      <div class="adv-grid">
+        <article class="adv-card reveal">
+          <span class="adv-icon"><svg><use href="#i-team"/></svg></span>
+          <p>Одна команда заменит вам бухгалтера, кадровика и налогового консультанта — все функции в одних руках</p>
+        </article>
+        <article class="adv-card reveal">
+          <span class="adv-icon"><svg><use href="#i-clock"/></svg></span>
+          <p>Мы всегда на связи: в отличие от штатного сотрудника, не уходим в отпуск, на больничный или в декрет</p>
+        </article>
+        <article class="adv-card reveal">
+          <span class="adv-icon"><svg><use href="#i-law"/></svg></span>
+          <p>Следим за изменениями в налоговом, трудовом и бухгалтерском законодательстве и вовремя о них предупреждаем</p>
+        </article>
+        <article class="adv-card reveal">
+          <span class="adv-icon"><svg><use href="#i-bolt"/></svg></span>
+          <p>Быстро принимаем учёт: проводим экспресс-аудит всех участков и исправляем найденные ошибки</p>
+        </article>
+        <article class="adv-card reveal">
+          <span class="adv-icon"><svg><use href="#i-chat"/></svg></span>
+          <p>Пишите в Telegram, Viber или на почту — ставьте задачи и задавайте вопросы так, как вам удобно</p>
+        </article>
+        <article class="adv-card reveal">
+          <span class="adv-icon"><svg><use href="#i-scale"/></svg></span>
+          <p>Независимый и объективный подход к учёту и консультациям с учётом свежих изменений в законах</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Экономия -->
+  <section class="section section--tight">
+    <div class="container">
+      <h2 class="section-title reveal">Сбережём ваши деньги <em>и время!</em></h2>
+      <div class="savings">
+        <ol class="savings-col">
+          <li class="reveal"><span class="num">01</span><p>Аутсорсер не болеет, не берёт отпуск и не нуждается в соцпакете. Типовые задачи и автоматизация документооборота делают учёт дешевле и эффективнее</p></li>
+          <li class="reveal"><span class="num">02</span><p>Не придётся искать, обучать и удерживать квалифицированного бухгалтера</p></li>
+          <li class="reveal"><span class="num">03</span><p>Не нужно оборудовать рабочее место: компьютер, правовые базы, лицензия на 1С — всё на нашей стороне</p></li>
+          <li class="reveal"><span class="num">04</span><p>Нет затрат на курсы повышения квалификации, справочные системы и профильные издания</p></li>
+          <li class="reveal"><span class="num">05</span><p>Меньше ошибок, которые оборачиваются переплатой налогов и штрафами</p></li>
+        </ol>
+        <div class="savings-center" aria-hidden="true">
+          <div class="savings-arc"></div>
+          <div class="savings-coin">
+            <svg><use href="#i-wallet"/></svg>
+            <strong>до 40%</strong>
+            <span>экономии на бухгалтерии</span>
+          </div>
+        </div>
+        <ol class="savings-col savings-col--right" start="6">
+          <li class="reveal"><span class="num">06</span><p>Качество бухгалтерского, налогового и кадрового учёта контролирует сам аутсорсер</p></li>
+          <li class="reveal"><span class="num">07</span><p>Внешние специалисты упрощают и ускоряют ваши процессы</p></li>
+          <li class="reveal"><span class="num">08</span><p>Не нужно самостоятельно отслеживать изменения налогового законодательства</p></li>
+          <li class="reveal"><span class="num">09</span><p>Учётные задачи решаются в срок и без потери качества</p></li>
+          <li class="reveal"><span class="num">10</span><p>Не нужно контролировать работу бухгалтера и кадровика</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Перечень услуг -->
+  <section class="section" id="price-list">
+    <div class="container list-layout">
+      <div class="list-col">
+        <h2 class="list-title reveal">Какие услуги мы оказываем:</h2>
+        <ul class="srv-list">
+          <li class="reveal"><span><svg><use href="#i-layers"/></svg></span>Ведение бухгалтерского учёта по Национальным стандартам (НСБУ)</li>
+          <li class="is-accent reveal"><span><svg><use href="#i-send"/></svg></span>Составление и сдача бухгалтерской отчётности в налоговые органы</li>
+          <li class="reveal"><span><svg><use href="#i-team"/></svg></span>Разработка учётной политики для целей бухгалтерского и налогового учёта</li>
+          <li class="is-accent reveal"><span><svg><use href="#i-send"/></svg></span>Налоговый учёт по действующему законодательству и формирование налоговых регистров</li>
+          <li class="reveal"><span><svg><use href="#i-chat"/></svg></span>Консультации по налоговому законодательству и стандартам бухгалтерского учёта</li>
+          <li class="is-accent reveal"><span><svg><use href="#i-doc"/></svg></span>Ведение отдельных участков учёта — например, основных средств или дебиторской задолженности</li>
+          <li class="reveal"><span><svg><use href="#i-chart"/></svg></span>Работа с банковскими счетами и кассой: платёжные поручения, графики платежей, отчёты о движении денег</li>
+          <li class="is-accent reveal"><span><svg><use href="#i-send"/></svg></span>Отчёты о движении денежных средств</li>
+          <li class="reveal"><span><svg><use href="#i-receipt"/></svg></span>Статистическая отчётность и её сдача в органы статистики</li>
+        </ul>
+      </div>
+      <div class="list-col list-col--offset">
+        <ul class="srv-list">
+          <li class="is-accent reveal"><span><svg><use href="#i-law"/></svg></span>Восстановление бухгалтерского и налогового учёта</li>
+          <li class="reveal"><span><svg><use href="#i-layers"/></svg></span>Объединение методик учёта после реорганизации — слияния, присоединения и т. п.</li>
+          <li class="is-accent reveal"><span><svg><use href="#i-user"/></svg></span>Обучение сотрудников</li>
+          <li class="reveal"><span><svg><use href="#i-shield"/></svg></span>Контроль соблюдения налогового законодательства</li>
+          <li class="is-accent reveal"><span><svg><use href="#i-doc"/></svg></span>Декларации по НДС, налогу на прибыль, на недвижимость, на доходы иностранных организаций и другим налогам</li>
+          <li class="reveal"><span><svg><use href="#i-receipt"/></svg></span>Годовая отчётность в полном комплекте: годовой отчёт и пояснения к нему</li>
+          <li class="is-accent reveal"><span><svg><use href="#i-team"/></svg></span>Сопровождение при взаимодействии с налоговой инспекцией и другими госорганами</li>
+          <li class="reveal"><span><svg><use href="#i-chart"/></svg></span>Управленческая отчётность: разработка и согласование форм отчётов</li>
+          <li class="is-accent reveal"><span><svg><use href="#i-scale"/></svg></span>Помощь с ответами на запросы налоговой, сопровождение камеральных и выездных проверок, анализ документов</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы. Примеры — замените на реальные отзывы или сканы писем клиентов -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <h2 class="section-title reveal">Отзывы <em>клиентов</em></h2>
+      <div class="slider" data-slider>
+        <div class="slider-viewport">
+        <div class="slider-track">
+          <figure class="review">
+            <blockquote>Перешли на обслуживание по рекомендации партнёров и ни разу не пожалели. Бухгалтерия больше не отнимает у меня время, а регулярная аналитика помогает планировать налоги и расходы заранее.</blockquote>
+            <figcaption><b>Директор</b><span>производственная компания</span></figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>Передали учёт на аутсорс после ухода главного бухгалтера. Ушли проблемы с отпусками и больничными, на вопросы по договорам и актам отвечают быстро. Рекомендую.</blockquote>
+            <figcaption><b>Руководитель</b><span>торговая компания</span></figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>Как ИП и продавец на маркетплейсе я долго не мог разобраться с учётом. Ребята всё настроили, объяснили простым языком и теперь сдают отчётность без моего участия.</blockquote>
+            <figcaption><b>Индивидуальный предприниматель</b><span>онлайн-торговля</span></figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>Восстановили учёт за два года и подготовили нас к проверке. Всё прошло спокойно, без штрафов. Отдельное спасибо за терпение и подробные консультации.</blockquote>
+            <figcaption><b>Учредитель</b><span>сфера услуг</span></figcaption>
+          </figure>
+        </div>
+        </div>
+        <button class="slider-btn slider-btn--prev" aria-label="Предыдущий отзыв"><svg><use href="#i-arrow"/></svg></button>
+        <button class="slider-btn slider-btn--next" aria-label="Следующий отзыв"><svg><use href="#i-arrow"/></svg></button>
+        <div class="slider-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section class="section" id="contacts">
+    <div class="container">
+      <div class="contact-box reveal">
+        <div class="contact-info">
+          <span class="eyebrow">Надёжный партнёр в финансовых вопросах</span>
+          <h2>Убедитесь сами</h2>
+          <p>Оставьте заявку на бесплатную консультацию — мы перезвоним и ответим на все ваши вопросы.</p>
+          <a class="logo logo--big" href="#top"><span class="logo-mark">БП</span><span class="logo-text">Баланс<b>Про</b></span></a>
+          <ul class="contact-list">
+            <li><svg><use href="#i-mail"/></svg><div><h3>E-mail</h3><a href="mailto:info@balanspro.by">info@balanspro.by</a></div></li>
+            <li><svg><use href="#i-phone"/></svg><div><h3>Телефон</h3><a href="tel:+375290000000">+375 (29) 000-00-00</a></div></li>
+            <li><svg><use href="#i-pin"/></svg><div><h3>Офис</h3><p>220000, г. Минск, ул. Примерная, д. 1, офис 10</p></div></li>
+          </ul>
+        </div>
+        <form class="contact-form" data-form novalidate>
+          <span class="eyebrow">Остались вопросы? Напишите нам</span>
+          <h2>Форма заявки</h2>
+          <label>Ваше имя<input name="name" type="text" autocomplete="name" required></label>
+          <label>Телефон<input name="phone" type="tel" autocomplete="tel" required></label>
+          <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+          <label>Сообщение (по желанию)<textarea name="message" rows="4"></textarea></label>
+          <label class="check"><input type="checkbox" required> Я согласен с <a href="#">политикой обработки персональных данных</a></label>
+          <button class="btn btn--primary" type="submit">Отправить заявку</button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-about">
+      <a class="logo" href="#top"><span class="logo-mark">БП</span><span class="logo-text">Баланс<b>Про</b></span></a>
+      <p>ООО «БалансПро»<br>г. Минск, ул. Примерная, д. 1, офис 10</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#services">Бухгалтерия для ИП</a></li>
+      <li><a href="#services">Учёт для продавцов на маркетплейсах</a></li>
+      <li><a href="#services">Бухгалтерский и налоговый учёт организаций</a></li>
+      <li><a href="#services">Отдельные участки учёта</a></li>
+      <li><a href="#services">Расчёт заработной платы</a></li>
+      <li><a href="#services">Авансовые отчёты</a></li>
+    </ul>
+    <ul class="footer-links">
+      <li><a href="#services">Бухгалтерия для ООО</a></li>
+      <li><a href="#services">Финансовый директор на аутсорсе</a></li>
+    </ul>
+    <div class="footer-contacts">
+      <div class="footer-messengers">
+        <a class="messenger" href="https://t.me/" aria-label="Telegram"><svg><use href="#i-tg"/></svg></a>
+        <a class="messenger" href="viber://chat?number=" aria-label="Viber"><svg><use href="#i-viber"/></svg></a>
+      </div>
+      <a class="header-phone" href="tel:+375290000000">+375 (29) 000-00-00</a>
+      <button class="btn btn--outline btn--sm" data-modal-open>Заказать звонок</button>
+      <a class="footer-policy" href="#">Политика конфиденциальности</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© БалансПро, все права защищены</div>
+</footer>
+
+<!-- Плавающая кнопка связи -->
+<div class="fab" data-fab>
+  <div class="fab-menu">
+    <a href="tel:+375290000000"><svg><use href="#i-phone"/></svg>Позвонить</a>
+    <a href="https://t.me/"><svg><use href="#i-tg"/></svg>Telegram</a>
+    <a href="viber://chat?number="><svg><use href="#i-viber"/></svg>Viber</a>
+    <a href="mailto:info@balanspro.by"><svg><use href="#i-mail"/></svg>E-mail</a>
+  </div>
+  <span class="fab-label">Напишите нам</span>
+  <button class="fab-btn" aria-expanded="false" aria-label="Способы связи"><svg class="fab-open"><use href="#i-chat"/></svg><svg class="fab-close"><use href="#i-close"/></svg></button>
+</div>
+
+<!-- Модальное окно -->
+<div class="modal" data-modal hidden>
+  <div class="modal-backdrop" data-modal-close></div>
+  <form class="modal-dialog contact-form" data-form role="dialog" aria-modal="true" aria-labelledby="modal-title" novalidate>
+    <button class="modal-x" type="button" data-modal-close aria-label="Закрыть"><svg><use href="#i-close"/></svg></button>
+    <h2 id="modal-title">Оставить заявку</h2>
+    <p class="modal-sub">Перезвоним в течение 15 минут в рабочее время</p>
+    <label>Ваше имя<input name="name" type="text" autocomplete="name" required></label>
+    <label>Телефон<input name="phone" type="tel" autocomplete="tel" required></label>
+    <label class="check"><input type="checkbox" required> Я согласен с <a href="#">политикой обработки персональных данных</a></label>
+    <button class="btn btn--primary" type="submit">Жду звонка</button>
+    <p class="form-status" role="status"></p>
+  </form>
+</div>
+
+<button class="to-top" aria-label="Наверх"><svg><use href="#i-arrow"/></svg></button>
+
+<script src="script.js"></script>
+</body>
+</html>
